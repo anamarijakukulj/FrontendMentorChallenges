@@ -1,8 +1,30 @@
 .hero {
-    padding: 5% 10%; 
-    @include flex;
+    padding: 2% 10%; 
+    height: 75vh;
+    @include flex(space-between, flex-start);
 
     &__text {
-        width: 50%;
+        padding-top: 20px;
+        width: 47%;
+        height: 100%;
+
+        h1{
+            font-size: 80px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            color: $gray-color;
+            font-size: $paragraph-size;
+            line-height: 25px;
+            width: 80%;
+            margin-bottom: 50px;
+        }
     }
+}
+
+.clients {
+    width: 90%;
+    margin-top: 100px;
+    @include flex;
 }

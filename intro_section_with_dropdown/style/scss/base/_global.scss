@@ -1,6 +1,16 @@
-a {
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+a,
+li {
     text-decoration: none;
     color: $gray-color;
+    font-size: 16px;
+
+    &:hover {
+        color: $black-color;
+    }
 }
 
 ul {

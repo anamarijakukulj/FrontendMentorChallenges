@@ -21,38 +21,50 @@
 
     <body>
     
-        <header>
-            <div>
-                <div>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__logo">
                     <img src="images/logo.svg" alt="logo">
                 </div>
 
-                <nav>
-                    <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Company</a></li> 
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li><div class="navigation__drop">Features
+                            <img class="arrow_down" src="images/icon-arrow-down.svg" alt="arrow-down">
+                            <img class="arrow_up" src="images/icon-arrow-up.svg" alt="arrow-up">
+                            </div>
+
+                            <div class="dropdown">
+                                <ul class="dropdown__features">
+                                    <li><a href="#"><img src="images/icon-todo.svg"> Todo List</a></li>
+                                    <li><a href="#"><img src="images/icon-calendar.svg"> Calendar</a></li>
+                                    <li><a href="#"><img src="images/icon-reminders.svg"> Reminders</a></li>
+                                    <li><a href="#"><img src="images/icon-planning.svg"> Planning</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li> <div class="navigation__drop">Company
+                            <img class="arrow_down" src="images/icon-arrow-down.svg" alt="arrow-down">
+                            <img class="arrow_up" src="images/icon-arrow-up.svg" alt="arrow-up">
+                            </div>
+
+                            <div class="dropdown">
+                                <ul class="dropdown__company">
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </li> 
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <div class="features__dropdown" hidden>
-                <li><a href="#">Todo List</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Reminders</a></li>
-                <li><a href="#">Planning</a></li>
-            </div>
-
-            <div class="company__dropdown" hidden>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Blog</a></li>
-            </div>
-
-            <div>
-                <a href="#">Login</a>
-                <a href="#">Register</a>
+            <div class="links">
+                <a class="links__login" href="#">Login</a>
+                <a class="links__register" href="#">Register</a>
             </div>
 
         </header>
@@ -60,11 +72,15 @@
         <main>
 
             <section class="hero">
+                <div class="hero__image_mobile">
+                    <img src="images/image-hero-mobile.png" alt="remote work">
+                </div>
+
                 <article class="hero__text">
                     <h1>Make remote work</h1>
                     <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-                    <button type="button">Learn more</button> <!--Change colors on hover-->
-                    <div>
+                    <button class="btn_black">Learn more</button>
+                    <div class="clients">
                         <img src="images/client-databiz.svg" alt="logo-databiz">
                         <img src="images/client-audiophile.svg" alt="logo-audio">
                         <img src="images/client-meet.svg" alt="logo-meet">
@@ -72,10 +88,8 @@
                     </div>
                 </article>
 
-                <div class="hero__image">
-                    <img srcset="images/image-hero-mobile.png 480w, images/image-hero-desktop.png 800w"
-                    sizes="(max-width: 500px) 480px, 800px"
-                    alt="remote work"> <!--img set(desktop & mobile)-->
+                <div class="hero__image_desktop">
+                    <img src="images/image-hero-desktop.png" alt="remote work">
                 </div>
             </section>
 
