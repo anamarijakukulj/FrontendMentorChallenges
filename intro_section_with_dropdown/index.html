@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="style/css/">
+        <link rel="stylesheet" href="style/css/style.css">
     </head>
 
     <body>
@@ -24,17 +24,30 @@
         <header>
             <div>
                 <div>
-                    <img src="" alt="logo">
+                    <img src="images/logo.svg" alt="logo">
                 </div>
 
                 <nav>
                     <ul>
-                        <li><a href="#">Features</a></li> <!--dropdown/ Todo List - Calendar - Reminders - Planning-->
-                        <li><a href="#">Company</a></li> <!--dropdown/ History - Our Team - Blog-->
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Company</a></li> 
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                 </nav>
+            </div>
+
+            <div class="features__dropdown" hidden>
+                <li><a href="#">Todo List</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Reminders</a></li>
+                <li><a href="#">Planning</a></li>
+            </div>
+
+            <div class="company__dropdown" hidden>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
             </div>
 
             <div>
@@ -46,21 +59,23 @@
 
         <main>
 
-            <section>
-                <article>
+            <section class="hero">
+                <article class="hero__text">
                     <h1>Make remote work</h1>
                     <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
                     <button type="button">Learn more</button> <!--Change colors on hover-->
                     <div>
-                        <img src="" alt="logo-databiz">
-                        <img src="" alt="logo-audio">
-                        <img src="" alt="logo-meet">
-                        <img src="" alt="logo-maker">
+                        <img src="images/client-databiz.svg" alt="logo-databiz">
+                        <img src="images/client-audiophile.svg" alt="logo-audio">
+                        <img src="images/client-meet.svg" alt="logo-meet">
+                        <img src="images/client-maker.svg" alt="logo-maker">
                     </div>
                 </article>
 
-                <div>
-                    <img src="" alt="remote work"> <!--img set(desktop & mobile)-->
+                <div class="hero__image">
+                    <img srcset="images/image-hero-mobile.png 480w, images/image-hero-desktop.png 800w"
+                    sizes="(max-width: 500px) 480px, 800px"
+                    alt="remote work"> <!--img set(desktop & mobile)-->
                 </div>
             </section>
 

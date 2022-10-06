@@ -1,0 +1,13 @@
+@mixin flex($justify-content: space-between, $align-items: center, $flex-direction: row) {
+    display:flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: center;
+    flex-direction: $flex-direction;
+}
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile) {
+        @content;
+    }
+}
