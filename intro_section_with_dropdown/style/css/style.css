@@ -16,28 +16,46 @@ ul {
 
 .header {
   padding: 2% 2%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  flex-direction: row; }
-  .header__logo {
-    width: 18%;
-    padding-top: 10px; }
-    .header__logo img {
-      width: 100%; }
-
-.wrapper {
-  width: 40%;
+  position: relative;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   flex-direction: row;
   align-content: flex-start; }
+  .header__logo {
+    width: 100px;
+    padding-top: 10px; }
+    .header__logo img {
+      width: 100%; }
+
+.wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  align-content: flex-start; }
+  @media only screen and (max-width: 425px) {
+    .wrapper {
+      display: none;
+      padding: 15px;
+      background-color: #fff;
+      width: 70%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: -2%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; } }
 
 .navigation {
-  width: 72%; }
+  width: 35%; }
   .navigation__list {
     padding: 0;
     display: flex;
@@ -45,6 +63,13 @@ ul {
     align-items: center;
     align-content: center;
     flex-direction: row; }
+    @media only screen and (max-width: 425px) {
+      .navigation__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: center;
+        flex-direction: column; } }
   .navigation__drop {
     position: relative;
     display: flex;
@@ -60,10 +85,20 @@ ul {
   align-items: center;
   align-content: center;
   flex-direction: row; }
+  @media only screen and (max-width: 425px) {
+    .links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; } }
   .links__register {
     border: 1px solid #696969;
     border-radius: 10px;
     padding: 10px 15px; }
+    @media only screen and (max-width: 425px) {
+      .links__register {
+        width: 100%; } }
 
 .dropdown {
   display: none;
@@ -153,3 +188,7 @@ ul {
     background-color: #fafafa;
     color: #141414;
     border: 2px solid #141414; }
+
+.menuIcon {
+  border: none;
+  background: transparent; }

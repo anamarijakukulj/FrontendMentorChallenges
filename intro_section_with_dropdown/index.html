@@ -22,9 +22,18 @@
     <body>
     
         <header class="header">
+            
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+
+            <div>
+                <button id="mobileMenu" class="menuIcon"><img src="images/icon-menu.svg" alt="menu"></button>
+            </div>
+
             <div class="wrapper">
-                <div class="header__logo">
-                    <img src="images/logo.svg" alt="logo">
+                <div>
+                    <button id="closeMenu" class="menuIcon"><img src="images/icon-close-menu.svg"></button>
                 </div>
 
                 <nav class="navigation">
@@ -60,11 +69,12 @@
                         <li><a href="#">About</a></li>
                     </ul>
                 </nav>
-            </div>
+            
 
-            <div class="links">
-                <a class="links__login" href="#">Login</a>
-                <a class="links__register" href="#">Register</a>
+                <div class="links">
+                    <a class="links__login" href="#">Login</a>
+                    <a class="links__register" href="#">Register</a>
+                </div>
             </div>
 
         </header>
