@@ -29,26 +29,26 @@
 
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li><div class="navigation__drop">Features
-                            <img class="arrow_down" src="images/icon-arrow-down.svg" alt="arrow-down">
-                            <img class="arrow_up" src="images/icon-arrow-up.svg" alt="arrow-up">
+                        <li><div id="feature" class="navigation__drop" role="button">Features
+                                <span class="arrow_down"><img src="images/icon-arrow-down.svg" alt="arrow-down"></span>
+                                <span class="arrow_up"><img src="images/icon-arrow-up.svg" alt="arrow-up"></span>
                             </div>
 
-                            <div class="dropdown">
+                            <div id="featureDrop" class="dropdown right-align">
                                 <ul class="dropdown__features">
-                                    <li><a href="#"><img src="images/icon-todo.svg"> Todo List</a></li>
-                                    <li><a href="#"><img src="images/icon-calendar.svg"> Calendar</a></li>
-                                    <li><a href="#"><img src="images/icon-reminders.svg"> Reminders</a></li>
-                                    <li><a href="#"><img src="images/icon-planning.svg"> Planning</a></li>
+                                    <li><a href="#"><img class="dropdown__icon" src="images/icon-todo.svg"> Todo List</a></li>
+                                    <li><a href="#"><img class="dropdown__icon" src="images/icon-calendar.svg"> Calendar</a></li>
+                                    <li><a href="#"><img class="dropdown__icon" src="images/icon-reminders.svg"> Reminders</a></li>
+                                    <li><a href="#"><img class="dropdown__icon" src="images/icon-planning.svg"> Planning</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li> <div class="navigation__drop">Company
-                            <img class="arrow_down" src="images/icon-arrow-down.svg" alt="arrow-down">
-                            <img class="arrow_up" src="images/icon-arrow-up.svg" alt="arrow-up">
+                        <li> <div id="company" class="navigation__drop" role="button">Company
+                                <span class="arrow_down"><img src="images/icon-arrow-down.svg" alt="arrow-down"></span>
+                                <span class="arrow_up"><img src="images/icon-arrow-up.svg" alt="arrow-up"></span>
                             </div>
 
-                            <div class="dropdown">
+                            <div id="companyDrop" class="dropdown">
                                 <ul class="dropdown__company">
                                     <li><a href="#">History</a></li>
                                     <li><a href="#">Our Team</a></li>
@@ -95,6 +95,7 @@
 
         </main>
 
+        <script src="script.js"></script>
     </body>
 
 </html>

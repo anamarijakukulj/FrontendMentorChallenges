@@ -27,6 +27,7 @@
     }
 
     &__drop {
+        position: relative;
         @include flex;
     }
 }
@@ -44,11 +45,28 @@
 
 .dropdown {
     display: none;
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 #00000030;
 
     &__features,
     &__company {
-        @include flex(space-evenly, center, column);
+        padding: 10px;
+        @include flex(space-evenly, flex-start, column);
+
+        li {
+            line-height: 30px;
+        }
     }
+
+    &__icon {
+        margin-right: 10px;
+    }
+}
+
+.right-align {
+    margin-left: -40px;
 }
 
 .active {
