@@ -2,6 +2,13 @@ body {
     font-family: 'Epilogue', sans-serif;
 }
 
+main {
+    @include mobile {
+        width: 100vw;
+        padding: 2%;
+    }
+}
+
 a,
 li {
     text-decoration: none;

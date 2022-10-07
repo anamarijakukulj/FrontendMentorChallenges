@@ -1,6 +1,11 @@
 body {
   font-family: 'Epilogue', sans-serif; }
 
+@media only screen and (max-width: 428px) {
+  main {
+    width: 100vw;
+    padding: 2%; } }
+
 a,
 li {
   text-decoration: none;
@@ -30,6 +35,20 @@ ul {
     .header__logo img {
       width: 100%; }
 
+.menu {
+  display: none; }
+  @media only screen and (max-width: 428px) {
+    .menu {
+      display: block; } }
+
+.exit {
+  display: none; }
+  @media only screen and (max-width: 428px) {
+    .exit {
+      display: block;
+      text-align: end;
+      margin-bottom: 20px; } }
+
 .wrapper {
   width: 90%;
   display: flex;
@@ -38,7 +57,7 @@ ul {
   align-content: center;
   flex-direction: row;
   align-content: flex-start; }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 428px) {
     .wrapper {
       display: none;
       padding: 15px;
@@ -47,10 +66,10 @@ ul {
       height: 100vh;
       position: absolute;
       top: 0;
-      right: -2%;
+      right: 0;
       display: flex;
       justify-content: flex-start;
-      align-items: center;
+      align-items: stretch;
       align-content: center;
       flex-direction: column; } }
 
@@ -63,13 +82,16 @@ ul {
     align-items: center;
     align-content: center;
     flex-direction: row; }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 428px) {
       .navigation__list {
+        margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         align-content: center;
-        flex-direction: column; } }
+        flex-direction: column; }
+        .navigation__list li {
+          margin-bottom: 20px; } }
   .navigation__drop {
     position: relative;
     display: flex;
@@ -77,6 +99,9 @@ ul {
     align-items: center;
     align-content: center;
     flex-direction: row; }
+    @media only screen and (max-width: 428px) {
+      .navigation__drop {
+        justify-content: flex-start; } }
 
 .links {
   width: 15%;
@@ -85,18 +110,23 @@ ul {
   align-items: center;
   align-content: center;
   flex-direction: row; }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 428px) {
     .links {
+      width: 90%;
+      padding-left: 15px;
+      text-align: center;
       display: flex;
       justify-content: space-between;
       align-items: center;
       align-content: center;
-      flex-direction: column; } }
+      flex-direction: column; }
+      .links__login {
+        margin-bottom: 20px; } }
   .links__register {
     border: 1px solid #696969;
     border-radius: 10px;
     padding: 10px 15px; }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 428px) {
       .links__register {
         width: 100%; } }
 
@@ -106,6 +136,11 @@ ul {
   margin-top: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 10px 0 #00000030; }
+  @media only screen and (max-width: 428px) {
+    .dropdown {
+      position: relative;
+      box-shadow: none;
+      width: 150px; } }
   .dropdown__features, .dropdown__company {
     padding: 10px;
     display: flex;
@@ -115,11 +150,20 @@ ul {
     flex-direction: column; }
     .dropdown__features li, .dropdown__company li {
       line-height: 30px; }
+      @media only screen and (max-width: 428px) {
+        .dropdown__features li, .dropdown__company li {
+          line-height: 20px; } }
   .dropdown__icon {
     margin-right: 10px; }
+  @media only screen and (max-width: 428px) {
+    .dropdown__company {
+      padding-left: 20px; } }
 
 .right-align {
   margin-left: -40px; }
+  @media only screen and (max-width: 428px) {
+    .right-align {
+      margin-left: 10px; } }
 
 .active {
   display: block;
@@ -139,9 +183,18 @@ ul {
   height: 100%; }
   .hero__image_desktop img {
     height: 100%; }
+  @media only screen and (max-width: 428px) {
+    .hero__image_desktop {
+      display: none; } }
 
 .hero__image_mobile {
   display: none; }
+  @media only screen and (max-width: 428px) {
+    .hero__image_mobile {
+      display: block;
+      width: 100%; }
+      .hero__image_mobile img {
+        width: 100%; } }
 
 .hero {
   padding: 2% 10%;
@@ -151,6 +204,12 @@ ul {
   align-items: flex-start;
   align-content: center;
   flex-direction: row; }
+  @media only screen and (max-width: 428px) {
+    .hero {
+      flex-direction: column;
+      padding: 0;
+      height: auto;
+      margin-top: 15px; } }
   .hero__text {
     padding-top: 20px;
     width: 47%;

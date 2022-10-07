@@ -3,6 +3,13 @@
     height: 75vh;
     @include flex(space-between, flex-start);
 
+    @include mobile {
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+        margin-top: 15px;
+    }
+
     &__text {
         padding-top: 20px;
         width: 47%;

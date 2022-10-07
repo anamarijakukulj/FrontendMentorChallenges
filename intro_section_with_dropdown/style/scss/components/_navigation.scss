@@ -15,6 +15,24 @@
     }
 }
 
+.menu {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.exit {
+    display: none;
+
+    @include mobile {
+        display: block;
+        text-align: end;
+        margin-bottom: 20px;
+    }
+}
+
 .wrapper {
     width: 90%;
     @include flex;
@@ -28,9 +46,9 @@
         height: 100vh;
         position: absolute;
         top: 0;
-        right: -2%;
+        right: 0;
 
-        @include flex(flex-start, center, column);
+        @include flex(flex-start, stretch, column);
     }
 }
 
@@ -42,13 +60,22 @@
         @include flex;
 
         @include mobile {
+            margin-bottom: 20px;
             @include flex(space-between, flex-start, column);
+
+            li {
+                margin-bottom: 20px;
+            }
         }
     }
 
     &__drop {
         position: relative;
         @include flex;
+
+        @include mobile {
+            justify-content: flex-start;
+        }
     }
 }
 
@@ -57,7 +84,14 @@
     @include flex;
 
     @include mobile {
+        width: 90%;
+        padding-left: 15px;
+        text-align: center;
         @include flex(space-between, center, column);
+
+        &__login {
+            margin-bottom: 20px;
+        }
     }
 
     &__register {
@@ -78,6 +112,12 @@
     border-radius: 8px;
     box-shadow: 0 4px 10px 0 #00000030;
 
+    @include mobile {
+        position: relative;
+        box-shadow: none;
+        width: 150px;
+    }
+
     &__features,
     &__company {
         padding: 10px;
@@ -85,16 +125,30 @@
 
         li {
             line-height: 30px;
+
+            @include mobile {
+                line-height: 20px;
+            }
         }
     }
 
     &__icon {
         margin-right: 10px;
     }
+
+    &__company {
+        @include mobile {
+            padding-left: 20px;
+        }
+    }
 }
 
 .right-align {
     margin-left: -40px;
+
+    @include mobile {
+        margin-left: 10px;
+    }
 }
 
 .active {

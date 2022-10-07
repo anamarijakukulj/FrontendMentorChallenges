@@ -6,9 +6,22 @@
         img {
             height: 100%;
         }
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &_mobile {
         display: none;
+
+        @include mobile {
+            display: block;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
