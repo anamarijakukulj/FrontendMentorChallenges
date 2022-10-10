@@ -1,27 +1,37 @@
-.hero__image {
-    
-    &_desktop {
-        height: 100%;
+.hero {
 
-        img {
+    &__image {
+    
+        &_desktop {
             height: 100%;
+
+            img {
+                height: 100%;
+            }
+
+            @include mobile {
+                display: none;
+            }
         }
 
-        @include mobile {
+        &_mobile {
             display: none;
+
+            @include mobile {
+                display: block;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 
-    &_mobile {
-        display: none;
+    &__text {
 
-        @include mobile {
-            display: block;
-            width: 100%;
-
-            img {
-                width: 100%;
-            }
+        img {
+            width: 20%;
         }
     }
 }

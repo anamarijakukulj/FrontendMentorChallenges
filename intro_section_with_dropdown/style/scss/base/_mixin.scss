@@ -6,6 +6,12 @@
     flex-direction: $flex-direction;
 }
 
+@mixin laptop {
+    @media only screen and (max-width: $laptop) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media only screen and (max-width: $mobile) {
         @content;
