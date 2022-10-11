@@ -2,7 +2,7 @@ body {
   font-family: 'Epilogue', sans-serif;
   margin: 0; }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 560px) {
   main {
     width: 100vw; } }
 
@@ -28,14 +28,14 @@ ul {
   align-content: center;
   flex-direction: row;
   align-content: flex-start; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .header {
       padding: 5%; } }
   .header__logo {
     width: 100px;
     margin-right: 30px;
     padding-top: 10px; }
-    @media only screen and (max-width: 428px) {
+    @media only screen and (max-width: 560px) {
       .header__logo {
         width: 90px; } }
     .header__logo img {
@@ -43,13 +43,13 @@ ul {
 
 .menu {
   display: none; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .menu {
       display: block; } }
 
 .exit {
   display: none; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .exit {
       display: block;
       text-align: end;
@@ -63,7 +63,7 @@ ul {
   align-content: center;
   flex-direction: row;
   align-content: flex-start; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .wrapper {
       display: none; } }
 
@@ -94,7 +94,7 @@ ul {
     align-items: center;
     align-content: center;
     flex-direction: row; }
-    @media only screen and (max-width: 428px) {
+    @media only screen and (max-width: 560px) {
       .navigation__list {
         margin-bottom: 20px;
         display: flex;
@@ -111,7 +111,7 @@ ul {
     align-items: center;
     align-content: center;
     flex-direction: row; }
-    @media only screen and (max-width: 428px) {
+    @media only screen and (max-width: 560px) {
       .navigation__drop {
         justify-content: flex-start; } }
 
@@ -125,7 +125,7 @@ ul {
   @media only screen and (max-width: 1024px) {
     .links {
       width: 20%; } }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .links {
       width: 100%;
       text-align: center;
@@ -140,7 +140,7 @@ ul {
     border: 1px solid #696969;
     border-radius: 10px;
     padding: 10px 15px; }
-    @media only screen and (max-width: 428px) {
+    @media only screen and (max-width: 560px) {
       .links__register {
         width: 90%; } }
 
@@ -150,7 +150,7 @@ ul {
   margin-top: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 10px 0 #00000030; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .dropdown {
       position: relative;
       box-shadow: none;
@@ -164,18 +164,18 @@ ul {
     flex-direction: column; }
     .dropdown__features li, .dropdown__company li {
       line-height: 30px; }
-      @media only screen and (max-width: 428px) {
+      @media only screen and (max-width: 560px) {
         .dropdown__features li, .dropdown__company li {
           line-height: 20px; } }
   .dropdown__icon {
     margin-right: 10px; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .dropdown__company {
       padding-left: 20px; } }
 
 .right-align {
   margin-left: -40px; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .right-align {
       margin-left: 10px; } }
 
@@ -197,13 +197,13 @@ ul {
   height: 100%; }
   .hero__image_desktop img {
     height: 100%; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .hero__image_desktop {
       display: none; } }
 
 .hero__image_mobile {
   display: none; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .hero__image_mobile {
       display: block;
       width: 100%; }
@@ -221,7 +221,7 @@ ul {
   align-items: flex-start;
   align-content: center;
   flex-direction: row; }
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 560px) {
     .hero {
       flex-direction: column;
       padding: 0;
@@ -231,7 +231,7 @@ ul {
     padding-top: 20px;
     width: 47%;
     height: 100%; }
-    @media only screen and (max-width: 428px) {
+    @media only screen and (max-width: 560px) {
       .hero__text {
         width: 100%;
         text-align: center;
@@ -243,7 +243,7 @@ ul {
     .hero__text h1 {
       font-size: 80px;
       margin-bottom: 50px; }
-      @media only screen and (max-width: 428px) {
+      @media only screen and (max-width: 560px) {
         .hero__text h1 {
           font-size: 32px;
           margin: 20px 10px; } }
@@ -253,7 +253,7 @@ ul {
       line-height: 25px;
       width: 80%;
       margin-bottom: 50px; }
-      @media only screen and (max-width: 428px) {
+      @media only screen and (max-width: 560px) {
         .hero__text p {
           margin: 0 0 30px;
           width: 90%;
