@@ -1,0 +1,17 @@
+.separator {
+
+    &__desktop {
+        
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
+    }
+}

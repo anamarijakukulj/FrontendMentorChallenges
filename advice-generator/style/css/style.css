@@ -1,0 +1,31 @@
+body {
+  background-color: #323a49; }
+
+p {
+  font-size: 28px; }
+
+h2 {
+  color: #52ffa8; }
+
+p {
+  color: #cee3e9; }
+
+.card__text {
+  text-align: center; }
+
+@media only screen and (max-width: 375px) {
+  .separator__desktop {
+    display: none; } }
+
+.separator__mobile {
+  display: none; }
+  @media only screen and (max-width: 375px) {
+    .separator__mobile {
+      display: block; } }
+
+#random {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+  background-color: #52ffa8; }
