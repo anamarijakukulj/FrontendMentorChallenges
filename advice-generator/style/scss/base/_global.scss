@@ -1,8 +1,10 @@
 body {
     background-color: $neutral-darkBlue;
     font-family: 'Manrope', sans-serif;
+    position: relative;
 }
 
-p {
+p,
+blockquote {
     font-size: $font-size;
 }

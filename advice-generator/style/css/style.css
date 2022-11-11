@@ -1,31 +1,40 @@
 body {
   background-color: #1f2632;
-  font-family: 'Manrope', sans-serif; }
+  font-family: 'Manrope', sans-serif;
+  position: relative; }
 
-p {
+p,
+blockquote {
   font-size: 28px; }
 
-p {
+blockquote {
   color: #cee3e9; }
 
 .card__text {
   text-align: center; }
   .card__text_adviceNumber {
-    font-size: 12px;
+    font-size: 10px;
     font-family: sans-serif;
     font-weight: 400;
     letter-spacing: 3px;
     color: #52ffa8; }
+  @media only screen and (max-width: 375px) {
+    .card__text_advice {
+      font-size: 22px; } }
 
-@media only screen and (max-width: 375px) {
-  .separator__desktop {
-    display: none; } }
+.separator__desktop {
+  margin-bottom: 25px; }
+  @media only screen and (max-width: 375px) {
+    .separator__desktop {
+      display: none; } }
 
 .separator__mobile {
   display: none; }
   @media only screen and (max-width: 375px) {
     .separator__mobile {
-      display: block; } }
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 40px; } }
 
 #random {
   width: 60px;
@@ -34,7 +43,10 @@ p {
   border-radius: 50px;
   background-color: #52ffa8;
   position: absolute;
-  top: 270px; }
+  top: 90%; }
+  #random:hover {
+    box-shadow: 0 0 30px #52ffa8;
+    cursor: pointer; }
 
 .card {
   border: none;
@@ -42,7 +54,7 @@ p {
   background-color: #323a49;
   padding: 50px;
   width: 450px;
-  height: 200px;
+  height: auto;
   margin: 10% auto;
   position: relative;
   display: flex;
@@ -50,3 +62,8 @@ p {
   align-items: center;
   align-content: center;
   flex-direction: column; }
+  @media only screen and (max-width: 375px) {
+    .card {
+      width: 80%;
+      padding: 30px;
+      margin-top: 30%; } }

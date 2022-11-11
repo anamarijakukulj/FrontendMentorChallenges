@@ -1,4 +1,4 @@
-p {
+blockquote {
     color: $primary-cyan;
 }
 
@@ -6,10 +6,17 @@ p {
     text-align: center;
 
     &_adviceNumber {
-        font-size: 12px;
+        font-size: 10px;
         font-family: sans-serif;
         font-weight: 400;
         letter-spacing: 3px;
         color: $primary-neon;
+    }
+
+    &_advice {
+        
+        @include mobile {
+            font-size: 22px;
+        }
     }
 }

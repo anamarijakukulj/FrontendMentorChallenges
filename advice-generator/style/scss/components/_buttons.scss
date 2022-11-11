@@ -5,5 +5,10 @@
     border-radius: 50px;
     background-color: $primary-neon;
     position: absolute;
-    top: 270px;
+    top: 90%;
+
+    &:hover {
+        box-shadow: 0 0 30px $primary-neon;
+        cursor: pointer;
+    }
 }

@@ -4,8 +4,14 @@
     background-color: $neutral-darkGreyBlue;
     padding: 50px;
     width: 450px;
-    height: 200px;
+    height: auto;
     margin: 10% auto;
     position: relative;
     @include flex(space-between, center, column);
+
+    @include mobile {
+        width: 80%;
+        padding: 30px;
+        margin-top: 30%;
+    }
 }

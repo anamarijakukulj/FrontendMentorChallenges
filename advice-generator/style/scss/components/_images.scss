@@ -1,6 +1,7 @@
 .separator {
 
     &__desktop {
+        margin-bottom: 25px;
         
         @include mobile {
             display: none;
@@ -12,6 +13,8 @@
 
         @include mobile {
             display: block;
+            margin-top: 20px;
+            margin-bottom: 40px;
         }
     }
 }
