@@ -1,11 +1,15 @@
-h2 {
-    color: $primary-neon;
-}
-
 p {
     color: $primary-cyan;
 }
 
 .card__text {
     text-align: center;
+
+    &_adviceNumber {
+        font-size: 12px;
+        font-family: sans-serif;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: $primary-neon;
+    }
 }

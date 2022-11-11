@@ -1,17 +1,21 @@
 body {
-  background-color: #323a49; }
+  background-color: #1f2632;
+  font-family: 'Manrope', sans-serif; }
 
 p {
   font-size: 28px; }
-
-h2 {
-  color: #52ffa8; }
 
 p {
   color: #cee3e9; }
 
 .card__text {
   text-align: center; }
+  .card__text_adviceNumber {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #52ffa8; }
 
 @media only screen and (max-width: 375px) {
   .separator__desktop {
@@ -28,4 +32,20 @@ p {
   height: 60px;
   border: none;
   border-radius: 50px;
-  background-color: #52ffa8; }
+  background-color: #52ffa8;
+  position: absolute;
+  top: 270px; }
+
+.card {
+  border: none;
+  border-radius: 16px;
+  background-color: #323a49;
+  padding: 50px;
+  width: 450px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: column; }

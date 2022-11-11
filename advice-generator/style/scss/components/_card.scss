@@ -1,0 +1,10 @@
+.card {
+    border: none;
+    border-radius: 16px;
+    background-color: $neutral-darkGreyBlue;
+    padding: 50px;
+    width: 450px;
+    height: 200px;
+    position: relative;
+    @include flex(space-between, center, column);
+}
