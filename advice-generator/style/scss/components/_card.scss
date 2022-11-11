@@ -5,6 +5,7 @@
     padding: 50px;
     width: 450px;
     height: 200px;
+    margin: 10% auto;
     position: relative;
     @include flex(space-between, center, column);
 }

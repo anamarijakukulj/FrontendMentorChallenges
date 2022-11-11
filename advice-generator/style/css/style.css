@@ -43,6 +43,7 @@ p {
   padding: 50px;
   width: 450px;
   height: 200px;
+  margin: 10% auto;
   position: relative;
   display: flex;
   justify-content: space-between;
