@@ -1,5 +1,6 @@
 let adviceNumber = document.querySelector("#number");
 let adviceText = document.querySelector("#advice");
+let randomBtn = document.querySelector("#random");
 
 const url = "https://api.adviceslip.com/advice";
 
@@ -15,3 +16,4 @@ const fetchAdvice = async () => {
 };
 
 fetchAdvice();
+randomBtn.addEventListener("click", fetchAdvice);
