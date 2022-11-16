@@ -21,7 +21,7 @@
             </div>
 
             <nav>
-                <ul>
+                <ul class="navigation__desktop">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
@@ -31,23 +31,23 @@
             </nav>
 
             <div>
-                <button role="button">Request Invite</button>
+                <button class="invite" role="button">Request Invite</button>
             </div>
         </header>
 
         <main>
             <div>
-                <article>
-                    <h1>Next generation digital bankong</h1>
+                <article class="teaser__text">
+                    <h1>Next generation digital banking</h1>
 
                     <p>Take your financial online. Your Easybank account will be a one-stop-shop for spending,
                         saving, budgeting, investing, and much more.
                     </p>
 
-                    <button role="button">Request Invite</button>
+                    <button class="invite" role="button">Request Invite</button>
                 </article>
 
-                <section>
+                <section class="teaser__image">
                     <img src="images/image-mockups.png" alt="phones">
                 </section>
             </div>
@@ -61,8 +61,8 @@
                     </p>
                 </article>
 
-                <article>
-                    <section>
+                <article class="perks">
+                    <section class="perks__description">
                         <img src="images/icons/icon-online.svg">
 
                         <h3>Online Banking</h3>
@@ -72,7 +72,7 @@
                         </p>
                     </section>
 
-                    <section>
+                    <section class="perks__description">
                         <img src="images/icons/icon-budgeting.svg">
                     
                         <h3>Simple Budgeting</h3>
@@ -82,7 +82,7 @@
                         </p>
                     </section>
 
-                    <section>
+                    <section class="perks__description">
                         <img src="images/icons/icon-onboarding.svg">
                     
                         <h3>Fast Onboarding</h3>
@@ -92,7 +92,7 @@
                         </p>
                     </section>
 
-                    <section>
+                    <section class="perks__description">
                         <img src="images/icons/icon-api.svg">
                     
                         <h3>Open API</h3>
@@ -107,47 +107,65 @@
             <div>
                 <h2>Latest Articles</h2>
 
-                <article>
+                <article class="card">
                     <section>
                         <img src="images/image-currency.jpg">
                     </section>
 
-                    <section>
-                        <p>By Claire Robinson</p>
+                    <section class="article">
+                        <p class="article__author">By Claire Robinson</p>
 
-                        <h3>Receive money in any currency with no fees</h3>
+                        <h3 class="article__headline">Receive money in any currency with no fees</h3>
 
-                        <p>The world is getting smaller and we're becoming more mobile. So why should
+                        <p class="article__preview">The world is getting smaller and we're becoming more mobile. So why should
                             you be forced to only receive money in a single...
                         </p>
                     </section>
+                </article>
 
+                <article class="card">
                     <section>
-                        <p>By Wilson Hutton</p>
+                        <img src="images/image-restaurant.jpg">
+                    </section>
+
+                    <section class="article">
+                        <p class="article__author">By Wilson Hutton</p>
                     
-                        <h3>Take yourself without worrying about money</h3>
+                        <h3 class="article__headline">Take yourself without worrying about money</h3>
                     
-                        <p>Our simple budgeting feature allows you to separate your spending and set
+                        <p class="article__preview">Our simple budgeting feature allows you to separate your spending and set
                             realistic limits each month. That means you...
                         </p>
                     </section>
+                </article>
 
+                <article class="card">
                     <section>
-                        <p>By Wilson Hutton</p>
+                        <img src="images/image-plane.jpg">
+                    </section>
+
+                    <section class="article">
+                        <p class="article__author">By Wilson Hutton</p>
                     
-                        <h3>Take your Easybank card wherever you go</h3>
+                        <h3 class="article__headline">Take your Easybank card wherever you go</h3>
                     
-                        <p>We want you to enjoy your travels. This is why we don't charge any fees on purchases
+                        <p class="article__preview">We want you to enjoy your travels. This is why we don't charge any fees on purchases
                             while you're aboard. We'll even show you...
                         </p>
                     </section>
+                </article>
 
+                <article class="card">
                     <section>
-                        <p>By Claire Robinson</p>
+                        <img src="images/image-confetti.jpg">
+                    </section>
+
+                    <section class="article">
+                        <p class="article__author">By Claire Robinson</p>
                     
-                        <h3>Our invite-only Beta accounts are now live!</h3>
+                        <h3 class="article__headline">Our invite-only Beta accounts are now live!</h3>
                     
-                        <p>After a lot of hard work by the whole team, we're excited to launch our closed beta.
+                        <p class="article__preview">After a lot of hard work by the whole team, we're excited to launch our closed beta.
                             It's easy to request an invite through the site...
                         </p>
                     </section>
@@ -156,50 +174,52 @@
         </main>
 
         <footer>
-            <div>
-                <section>
-                    <section>
-                        <img src="images/logo.svg">
+            <div class="footer">
+                <div class="footer__left">
+                    <section class="footer__">
+                        <section>
+                            <img src="images/logo.svg">
+                        </section>
+
+                        <section class="navigation__social">
+                            <ul>
+                                <li><a href="#"><img src="images/icons/icon-facebook.svg"></a></li>
+                                <li><a href="#"><img src="images/icons/icon-youtube.svg"></a></li>
+                                <li><a href="#"><img src="images/icons/icon-twitter.svg"></a></li>
+                                <li><a href="#"><img src="images/icons/icon-pinterest.svg"></a></li>
+                                <li><a href="#"><img src="images/icons/icon-instagram.svg"></a></li>
+                            </ul>
+                        </section>
                     </section>
 
                     <section>
-                        <ul>
-                            <li><a href="#"><img src="images/icons/icon-facebook.svg"></a></li>
-                            <li><a href="#"><img src="images/icons/icon-youtube.svg"></a></li>
-                            <li><a href="#"><img src="images/icons/icon-twitter.svg"></a></li>
-                            <li><a href="#"><img src="images/icons/icon-pinterest.svg"></a></li>
-                            <li><a href="#"><img src="images/icons/icon-instagram.svg"></a></li>
-                        </ul>
+                        <nav>
+                            <ul class="navigation__footer">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </nav>
+
+                        <nav>
+                            <ul class="navigation__footer">
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </nav>
                     </section>
-                </section>
+                </div>
 
-                <section>
-                    <nav>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </nav>
-
-                    <nav>
-                        <ul>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </nav>
-                </section>
-
-                <section>
+                <div class="footer__right">
                     <div>
-                        <button role="button">Request Invite</button>
+                        <button class="invite" role="button">Request Invite</button>
                     </div>
 
                     <div>
-                        <p>&copy;Easybank. All Right Reserved</p>
+                        <p class="footer__copyright">&copy;Easybank. All Right Reserved</p>
                     </div>
-                </section>
+                </div>
             </div>
         </footer>
         
