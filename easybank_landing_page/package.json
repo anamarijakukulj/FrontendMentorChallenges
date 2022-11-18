@@ -1,0 +1,15 @@
+{
+  "name": "easybank_landing_page",
+  "version": "1.0.0",
+  "description": "Frontend challenge with landing page",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w style/scss/ -o style/css/"
+  },
+  "author": "Anamarija Kukulj",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
