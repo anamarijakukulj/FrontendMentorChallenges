@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin flex($justify-content: space-between, $align-items: center, $flex-direction: row) {
     display: flex;
     justify-content: $justify-content;
@@ -11,3 +12,18 @@
         @content;
     }
 }
+=======
+@mixin flex($justify-content: space-between, $align-items: center, $flex-direction: row) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: center;
+    flex-direction: $flex-direction;
+}
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile) {
+        @content;
+    }
+}
+>>>>>>> 3710610c1a24d192da54b114191ff6f58bd0a022

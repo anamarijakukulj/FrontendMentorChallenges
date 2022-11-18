@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //LAYOUT
 .content__box {
     margin: 0 160px;
@@ -11,3 +12,18 @@ body {
 header {
     @include flex();
 }
+=======
+//LAYOUT
+.content__box {
+    margin: 0 160px;
+}
+
+//COMPONENTS
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    @include flex();
+}
+>>>>>>> 3710610c1a24d192da54b114191ff6f58bd0a022
