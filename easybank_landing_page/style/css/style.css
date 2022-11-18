@@ -5,6 +5,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px; }
 
+a {
+  text-decoration: none;}
+
 header {
   display: flex;
   justify-content: space-between;
