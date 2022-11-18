@@ -2,7 +2,8 @@
   margin: 0 160px; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px; }
 
 header {
   display: flex;
@@ -10,3 +11,13 @@ header {
   align-items: center;
   align-content: center;
   flex-direction: row; }
+
+.invite {
+  width: 160px;
+  height: 40px;
+  border: none;
+  border-radius: 24px;
+  color: #ffffff;
+  background: linear-gradient(0.25turn, #35d45f, #2bb7da);
+  letter-spacing: 1px;
+  font-weight: 400; }
