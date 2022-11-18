@@ -1,0 +1,12 @@
+.content__box {
+  margin: 0 160px; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row; }

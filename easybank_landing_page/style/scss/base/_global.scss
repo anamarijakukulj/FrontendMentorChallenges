@@ -1,0 +1,13 @@
+//LAYOUT
+.content__box {
+    margin: 0 160px;
+}
+
+//COMPONENTS
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    @include flex();
+}
