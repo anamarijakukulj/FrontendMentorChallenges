@@ -1,0 +1,16 @@
+.navigation {
+    width: 25%;
+
+    &__desktop {
+        padding: 0;
+        list-style: none;
+
+        @include flex();
+
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            color: $grayish-blue;
+        }
+    }
+}
