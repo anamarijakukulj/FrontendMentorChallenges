@@ -6,6 +6,11 @@
     flex-direction: $flex-direction;
 }
 
+@mixin font_weight($number) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $number;
+}
+
 @mixin mobile {
     @media only screen and (max-width: $mobile) {
         @content;
