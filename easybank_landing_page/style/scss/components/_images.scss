@@ -1,0 +1,21 @@
+.teaser {
+    
+    &__image {
+    position: absolute;
+    top: -140px;
+    right: -350px;
+
+        img {
+            height: 1100px;
+        }
+
+    }
+
+    &__background {
+        position: relative;
+        height: 150vh;
+        top: -80%;
+        right: -45%;
+        z-index: -1;
+    }
+}
