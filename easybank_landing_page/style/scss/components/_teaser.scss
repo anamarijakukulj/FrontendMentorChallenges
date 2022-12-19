@@ -1,1 +1,29 @@
+.teaser {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: relative;
+    background-color: $light-gray;
+    
+    .content__box {
+        @include flex;
+    }
+
+    &__text {
+        position: relative;
+        width: 40%;
+        top: 150px;
+
+        .article__text {
+            width: 80%;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 72px;
+        margin-bottom: 24px;
+        @include font_weight(300);
+    }
+}
 
