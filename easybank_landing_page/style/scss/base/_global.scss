@@ -1,6 +1,7 @@
 //LAYOUT
 .content__box {
     margin: 0 160px;
+    position: relative;
 }
 
 //COMPONENTS
@@ -14,6 +15,7 @@ a {
 }
 
 header {
+    padding-bottom: 8px;
+    z-index: 1000;
     @include flex();
 }
-
