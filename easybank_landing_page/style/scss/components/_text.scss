@@ -1,3 +1,9 @@
 .title {
   @include font_weight(400);
 }
+
+.article__text {
+  color: $grayish-blue;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
