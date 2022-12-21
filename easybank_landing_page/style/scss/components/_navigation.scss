@@ -1,6 +1,10 @@
 .navigation {
     width: 25%;
 
+    &__header {
+        @include flex();
+    }
+
     &__desktop {
         padding: 0;
         list-style: none;
