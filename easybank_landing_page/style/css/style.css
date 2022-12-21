@@ -4,22 +4,29 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 0; }
+
+header {
+  padding-bottom: 8px;
+  background-color: #ffffff;
+  z-index: 1000; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
 
 a {
   text-decoration: none; }
 
-header {
-  padding-bottom: 8px;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  flex-direction: row; }
-
 .navigation {
   width: 25%; }
+  .navigation__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row; }
   .navigation__desktop {
     padding: 0;
     list-style: none;
@@ -37,10 +44,18 @@ header {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400; }
 
-.article__text {
-  color: #9698a6;
-  line-height: 30px;
-  margin-bottom: 30px; }
+.article {
+  width: 24%; }
+  .article__bundle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row; }
+  .article__text {
+    color: #9698a6;
+    line-height: 30px;
+    margin-bottom: 30px; }
 
 .teaser {
   width: 100vw;
