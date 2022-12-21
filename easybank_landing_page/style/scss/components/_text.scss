@@ -2,8 +2,16 @@
   @include font_weight(400);
 }
 
-.article__text {
+.article {
+  width: 24%;
+
+  &__bundle {
+    @include flex;
+  }
+  
+  &__text {
   color: $grayish-blue;
   line-height: 30px;
   margin-bottom: 30px;
+  }
 }
