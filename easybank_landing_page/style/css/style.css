@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none; }
 
+h2 {
+  margin-top: 0; }
+
 header {
   padding-bottom: 8px;
   position: relative;
@@ -136,3 +139,30 @@ main {
   z-index: 0; }
   .teaser__background img {
     height: 100%; }
+
+.card {
+  width: 23%;
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 8px; }
+  .card__title {
+    margin-bottom: 50px; }
+  .card__image {
+    width: 100%;
+    height: 220px; }
+    .card__image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px 8px 0px 0px; }
+
+.article {
+  padding: 25px 20px; }
+  .article__author {
+    color: #9698a6;
+    font-size: 12px; }
+  .article__headline {
+    font-size: 22px;
+    margin-top: 0; }
+  .article__preview {
+    font-size: 16px;
+    color: #9698a6; }
