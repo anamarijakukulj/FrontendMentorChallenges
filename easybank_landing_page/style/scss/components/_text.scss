@@ -13,4 +13,15 @@
   background-color: $light-grayish-blue;
   position: relative;
   z-index: 1;
+
+  &__intro {
+    width: 50%;
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    font-size: 42px;
+    margin-bottom: 30px;
+    @include font_weight(300);
+  }
 }

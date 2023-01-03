@@ -59,6 +59,14 @@ main {
   background-color: #f3f4f6;
   position: relative;
   z-index: 1; }
+  .section__intro {
+    width: 50%;
+    margin-bottom: 70px; }
+  .section__title {
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; }
 
 .teaser {
   width: 100vw;
