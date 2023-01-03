@@ -21,8 +21,6 @@ header {
 main {
   z-index: -1;
   background-color: #fafafa; }
-  main:nth-child(even) {
-    background-color: #f3f4f6; }
 
 .navigation {
   z-index: 100;
