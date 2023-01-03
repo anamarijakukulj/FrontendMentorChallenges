@@ -18,4 +18,27 @@
             @include font_weight(400);
         }
     }
+
+    //FOOTER
+    &__social {
+
+        ul {
+            padding: 0;
+            margin: 0;
+            @include flex();
+        }
+    }
+
+    &__footer {
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: $white;
+            font-size: 14px;
+            @include font_weight(300);
+        }
+    }
 }
