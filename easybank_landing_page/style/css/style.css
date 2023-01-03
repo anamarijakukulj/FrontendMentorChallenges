@@ -46,13 +46,15 @@ main {
       font-weight: 400; }
 
 .title {
+  font-size: 26px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
+  font-weight: 300; }
 
 .article__text {
   color: #9698a6;
   line-height: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding-right: 25px; }
 
 .section {
   padding: 100px 0;
@@ -67,6 +69,16 @@ main {
     margin-bottom: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300; }
+
+.flex__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row; }
+
+.perks__description {
+  width: 24%; }
 
 .teaser {
   width: 100vw;
