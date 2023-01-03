@@ -26,6 +26,11 @@
     margin-bottom: 30px;
     @include font_weight(300);
   }
+
+  &--white {
+    background-color: transparent;
+    padding: 100px 0;
+  }
 }
 
 .flex__row {
