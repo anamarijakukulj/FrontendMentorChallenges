@@ -2,20 +2,27 @@
     
     &__image {
     position: absolute;
-    top: -140px;
-    right: -350px;
+    height: 120%;
+    width: 50%;
+    top: -15%;
+    right: -10%;
+    z-index: 1;
 
         img {
-            height: 1100px;
+            height: 110%;
         }
 
     }
 
     &__background {
-        position: relative;
-        height: 150vh;
-        top: -80%;
-        right: -45%;
-        z-index: -1;
+        position: absolute;
+        height: 150%;
+        top: -35%;
+        right: -25%;
+        z-index: 0;
+
+        img {
+            height: 100%;
+        }
     }
 }
