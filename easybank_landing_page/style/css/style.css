@@ -1,26 +1,32 @@
 .content__box {
-  margin: 0 160px;
+  margin: 0 15%;
   position: relative; }
 
 body {
+  width: 100vw;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   margin: 0; }
 
-header {
-  padding-bottom: 8px;
-  background-color: #ffffff;
-  z-index: 1000; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
-
 a {
   text-decoration: none; }
 
+header {
+  padding-bottom: 8px;
+  position: relative;
+  z-index: 1000;
+  width: 100vw;
+  background-color: #ffffff; }
+
+main {
+  z-index: -1;
+  background-color: #fafafa; }
+  main:nth-child(even) {
+    background-color: #f3f4f6; }
+
 .navigation {
-  width: 25%; }
+  z-index: 100;
+  width: 30%; }
   .navigation__header {
     display: flex;
     justify-content: space-between;
@@ -37,33 +43,28 @@ a {
     flex-direction: row; }
     .navigation__desktop a {
       font-size: 14px;
-      font-weight: 300;
-      color: #9698a6; }
+      color: #9698a6;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400; }
 
 .title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400; }
 
-.article {
-  width: 24%; }
-  .article__bundle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-direction: row; }
-  .article__text {
-    color: #9698a6;
-    line-height: 30px;
-    margin-bottom: 30px; }
+.article__text {
+  color: #9698a6;
+  line-height: 30px;
+  margin-bottom: 30px; }
+
+.perks {
+  padding: 100px 0; }
 
 .teaser {
   width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  position: relative;
-  background-color: #fafafa; }
+  height: 90vh;
+  position: relative; }
   .teaser .content__box {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,9 +73,9 @@ a {
   .teaser__text {
     position: relative;
     width: 40%;
-    top: 150px; }
+    top: -5%; }
     .teaser__text .article__text {
-      width: 80%; }
+      width: 85%; }
   .teaser__title {
     font-size: 60px;
     line-height: 72px;
@@ -95,14 +96,13 @@ a {
 
 .teaser__image {
   position: absolute;
-  top: -140px;
-  right: -350px; }
+  height: 120%;
+  width: 50%;
+  top: -15%;
+  right: -10%;
+  z-index: 1; }
   .teaser__image img {
-    height: 1100px; }
+    height: 110%; }
 
 .teaser__background {
-  position: relative;
-  height: 150vh;
-  top: -80%;
-  right: -45%;
-  z-index: -1; }
+  position: absolute;
