@@ -104,3 +104,9 @@ main {
 
 .teaser__background {
   position: absolute;
+  height: 150%;
+  top: -35%;
+  right: -25%;
+  z-index: 0; }
+  .teaser__background img {
+    height: 100%; }
