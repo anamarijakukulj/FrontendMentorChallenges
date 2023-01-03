@@ -10,4 +10,7 @@
 
 .section {
   padding: 100px 0;
+  background-color: $light-grayish-blue;
+  position: relative;
+  z-index: 1;
 }
