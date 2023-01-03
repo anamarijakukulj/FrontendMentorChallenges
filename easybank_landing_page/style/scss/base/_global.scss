@@ -1,28 +1,30 @@
-.teaser {
-    
-    &__image {
-    position: absolute;
-    height: 120%;
-    width: 50%;
-    top: -15%;
-    right: -10%;
-    z-index: 1;
+//LAYOUT
+.content__box {
+    margin: 0 15%;
+    position: relative;
+}
 
-        img {
-            height: 110%;
-        }
+//COMPONENTS
+body {
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: $font-size;
+    margin: 0;
+}
 
-    }
+a {
+    text-decoration: none;
+}
 
-    &__background {
-        position: absolute;
-        height: 150%;
-        top: -35%;
-        right: -25%;
-        z-index: 0;
+header {
+    padding-bottom: 8px;
+    position: relative;
+    z-index: 1000;
+    width: 100vw;
+    background-color: $white;
+}
 
-        img {
-            height: 100%;
-        }
-    }
+main {
+    z-index: -1;
+    background-color: $light-gray;
 }
