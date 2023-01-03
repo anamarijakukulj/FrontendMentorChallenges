@@ -1,28 +1,30 @@
 //LAYOUT
 .content__box {
-    margin: 0 160px;
+    margin: 0 15%;
     position: relative;
 }
 
 //COMPONENTS
 body {
+    width: 100vw;
     font-family: 'Open Sans', sans-serif;
     font-size: $font-size;
     margin: 0;
-}
-
-header {
-    padding-bottom: 8px;
-    background-color: $white;
-    z-index: 1000;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    @include font_weight(400);
 }
 
 a {
     text-decoration: none;
 }
 
+header {
+    padding-bottom: 8px;
+    position: relative;
+    z-index: 1000;
+    width: 100vw;
+    background-color: $white;
+}
 
+main {
+    z-index: -1;
+    background-color: $light-gray;
+}
