@@ -1,5 +1,6 @@
 .navigation {
-    width: 25%;
+    z-index: 100;
+    width: 30%;
 
     &__header {
         @include flex();
@@ -13,8 +14,8 @@
 
         a {
             font-size: 14px;
-            font-weight: 300;
             color: $grayish-blue;
+            @include font_weight(400);
         }
     }
 }
