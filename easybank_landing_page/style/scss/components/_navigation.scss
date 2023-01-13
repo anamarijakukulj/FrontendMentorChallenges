@@ -1,21 +1,34 @@
 .navigation {
     z-index: 100;
     width: 30%;
+    height: 100%;
+    display: flex;
+    align-content: center;
 
     &__header {
+        height: 100%;
+        flex-wrap: wrap;
         @include flex();
     }
 
     &__desktop {
+        width: 100%;
         padding: 0;
+        margin: 0;
         list-style: none;
-
+        flex-wrap: wrap;
         @include flex();
 
         a {
             font-size: 14px;
             color: $grayish-blue;
             @include font_weight(400);
+
+            &:hover,
+            &:active {
+                padding-bottom: 20px;
+                border-bottom: 5px solid $lime-green;
+            }
         }
     }
 
@@ -26,6 +39,10 @@
             padding: 0;
             margin: 0;
             @include flex();
+
+            img:hover {
+                filter: invert(46%) sepia(97%) saturate(359%) hue-rotate(60deg) brightness(96%) contrast(91%);
+            }
         }
     }
 
@@ -39,6 +56,10 @@
             color: $white;
             font-size: 14px;
             @include font_weight(300);
+
+            &:hover {
+                color: $lime-green;
+            }
         }
     }
 }
