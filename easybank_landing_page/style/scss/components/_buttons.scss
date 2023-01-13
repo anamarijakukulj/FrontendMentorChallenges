@@ -1,11 +1,16 @@
 .invite {
     width: 160px;
     height: 40px;
+    padding: 10px 25px;
     border: none;
     border-radius: 24px;
     color: $white;
-    background: linear-gradient(0.25turn, $lime-green, $bright-cyan);
-    letter-spacing: 1px;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 400;
+    background: linear-gradient(0.25turn, $lime-green, $bright-cyan);
+
+    &:hover {
+        opacity: 50%;
+        cursor: pointer;
+    }
 }
