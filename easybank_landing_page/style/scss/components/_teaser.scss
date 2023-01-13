@@ -2,7 +2,7 @@
     width: 100vw;
     height: 90vh;
     position: relative;
-    
+
     .content__box {
         height: 100%;
         @include flex;
@@ -22,7 +22,7 @@
         font-size: 60px;
         line-height: 72px;
         margin-bottom: 24px;
+        color: $dark-blue;
         @include font_weight(300);
     }
 }
-
