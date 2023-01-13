@@ -1,5 +1,6 @@
 .title {
   font-size: 26px;
+  color: $dark-blue;
   @include font_weight(300);
 }
 
@@ -24,6 +25,7 @@
   &__title {
     font-size: 42px;
     margin-bottom: 30px;
+    color: $dark-blue;
     @include font_weight(300);
   }
 
@@ -39,4 +41,8 @@
 
 .perks__description {
   width: 24%;
+
+  p {
+    font-size: 16px;
+  }
 }
