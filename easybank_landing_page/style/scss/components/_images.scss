@@ -1,17 +1,28 @@
 .teaser {
-    
+
     &__image {
-    position: absolute;
-    height: 120%;
-    width: 50%;
-    top: -15%;
-    right: -10%;
-    z-index: 2;
+        position: absolute;
+        height: 120%;
+        width: 50%;
+        top: -15%;
+        right: -10%;
+        z-index: 2;
+
+        @include mobile {
+            width: 100%;
+            height: 60%;
+            left: 0%;
+            top: -20%;
+        }
 
         img {
             height: 110%;
-        }
 
+            @include mobile {
+                width: 100%;
+                object-fit: fill;
+            }
+        }
     }
 
     &__background {
@@ -20,6 +31,12 @@
         top: -35%;
         right: -25%;
         z-index: 0;
+
+        @include mobile {
+            right: -90%;
+            top: -50%;
+            height: 100%;
+        }
 
         img {
             height: 100%;
