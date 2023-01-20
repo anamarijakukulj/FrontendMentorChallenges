@@ -21,6 +21,7 @@
         @include mobile {
             width: 100%;
             top: 45%;
+            text-align: center;
         }
 
         .article__text {
@@ -34,7 +35,7 @@
     }
 
     &__title {
-        font-size: 60px;
+        font-size: 64px;
         line-height: 72px;
         margin-bottom: 24px;
         color: $dark-blue;

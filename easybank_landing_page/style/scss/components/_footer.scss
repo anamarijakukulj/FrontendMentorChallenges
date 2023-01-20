@@ -2,29 +2,66 @@
     padding: 50px 0;
     @include flex();
 
+    @include mobile {
+        @include flex(space-between, center, column);
+    }
+
     &__left {
         width: 50%;
         @include flex();
+
+        @include mobile {
+            width: 100%;
+            @include flex(space-between, center, column);
+        }
+    }
+
+    &__social {
+        @include mobile {
+            width: 70%;
+            text-align: center;
+        }
     }
 
     &__logo {
         margin-bottom: 50px;
-         img {
+
+        @include mobile {
+            margin-bottom: 25px;
+        }
+
+        img {
             filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(217deg) brightness(107%) contrast(105%);
-         }
+        }
     }
 
     &__navigation {
-        @include flex();
+        @include mobile {
+            width: 70%;
+            text-align: center;
+        }
     }
 
     &__right {
-        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: flex-end;
+
+        @include mobile {
+            text-align: center;
+            margin-top: 30px;
+            display: block;
+        }
     }
 
     &__copyright {
         color: $grayish-blue;
         font-size: 14px;
+
+        @include mobile {
+            margin-top: 30px;
+        }
     }
 
     .invite {

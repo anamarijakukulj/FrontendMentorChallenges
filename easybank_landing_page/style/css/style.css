@@ -84,8 +84,25 @@ footer {
     flex-direction: row; }
     .navigation__social ul img:hover {
       filter: invert(46%) sepia(97%) saturate(359%) hue-rotate(60deg) brightness(96%) contrast(91%); }
+  @media only screen and (max-width: 425px) {
+    .navigation__social {
+      margin-bottom: 25px; }
+      .navigation__social li {
+        width: 20%; }
+      .navigation__social a {
+        width: 100%;
+        display: block; }
+        .navigation__social a img {
+          width: 60%; } }
+  @media only screen and (max-width: 425px) {
+    .navigation__footer {
+      padding: 0;
+      margin: 0; } }
   .navigation__footer li {
     margin-bottom: 5px; }
+    @media only screen and (max-width: 425px) {
+      .navigation__footer li {
+        margin-bottom: 10px; } }
   .navigation__footer a {
     color: #ffffff;
     font-size: 14px;
@@ -208,7 +225,8 @@ footer {
     @media only screen and (max-width: 425px) {
       .teaser__text {
         width: 100%;
-        top: 45%; } }
+        top: 45%;
+        text-align: center; } }
     .teaser__text .article__text {
       width: 85%; }
       @media only screen and (max-width: 425px) {
@@ -216,7 +234,7 @@ footer {
           width: 100%;
           margin: 0 0 40px; } }
   .teaser__title {
-    font-size: 60px;
+    font-size: 64px;
     line-height: 72px;
     margin-bottom: 24px;
     color: #2d314d;
@@ -229,8 +247,10 @@ footer {
         text-align: center; } }
 
 .invite {
-  width: 160px;
-  height: 40px;
+  display: block;
+  width: 120px;
+  height: 25px;
+  text-align: center;
   padding: 10px 25px;
   border: none;
   border-radius: 24px;
@@ -238,6 +258,9 @@ footer {
   font-size: 14px;
   font-weight: 400;
   background: linear-gradient(0.25turn, #35d45f, #2bb7da); }
+  @media only screen and (max-width: 425px) {
+    .invite {
+      margin: 0 auto; } }
   .invite:hover {
     opacity: 50%;
     cursor: pointer; }
@@ -254,19 +277,20 @@ footer {
       width: 100%;
       height: 60%;
       left: 0%;
-      top: -20%; } }
+      top: -15%; } }
   .teaser__image img {
-    height: 110%; }
+    height: 120%; }
     @media only screen and (max-width: 425px) {
       .teaser__image img {
         width: 100%;
+        height: auto;
         object-fit: fill; } }
 
 .teaser__background {
   position: absolute;
   height: 150%;
   top: -35%;
-  right: -25%;
+  right: -18%;
   z-index: 0; }
   @media only screen and (max-width: 425px) {
     .teaser__background {
@@ -328,6 +352,13 @@ footer {
   align-items: center;
   align-content: center;
   flex-direction: row; }
+  @media only screen and (max-width: 425px) {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; } }
   .footer__left {
     width: 50%;
     display: flex;
@@ -335,21 +366,45 @@ footer {
     align-items: center;
     align-content: center;
     flex-direction: row; }
+    @media only screen and (max-width: 425px) {
+      .footer__left {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-direction: column; } }
+  @media only screen and (max-width: 425px) {
+    .footer__social {
+      width: 70%;
+      text-align: center; } }
   .footer__logo {
     margin-bottom: 50px; }
+    @media only screen and (max-width: 425px) {
+      .footer__logo {
+        margin-bottom: 25px; } }
     .footer__logo img {
       filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(217deg) brightness(107%) contrast(105%); }
-  .footer__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-direction: row; }
+  @media only screen and (max-width: 425px) {
+    .footer__navigation {
+      width: 70%;
+      text-align: center; } }
   .footer__right {
-    text-align: right; }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-end; }
+    @media only screen and (max-width: 425px) {
+      .footer__right {
+        text-align: center;
+        margin-top: 30px;
+        display: block; } }
   .footer__copyright {
     color: #9698a6;
     font-size: 14px; }
+    @media only screen and (max-width: 425px) {
+      .footer__copyright {
+        margin-top: 30px; } }
   .footer .invite {
     margin-bottom: 15px; }
 

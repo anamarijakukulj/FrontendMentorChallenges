@@ -1,6 +1,8 @@
 .invite {
-    width: 160px;
-    height: 40px;
+    display: block;
+    width: 120px;
+    height: 25px;
+    text-align: center;
     padding: 10px 25px;
     border: none;
     border-radius: 24px;
@@ -8,6 +10,10 @@
     font-size: 14px;
     font-weight: 400;
     background: linear-gradient(0.25turn, $lime-green, $bright-cyan);
+
+    @include mobile {
+        margin: 0 auto;
+    }
 
     &:hover {
         opacity: 50%;

@@ -2,7 +2,7 @@
 .content__box {
     margin: 0 15%;
     position: relative;
-    
+
     @include mobile {
         margin: 0 5%;
     }
@@ -14,7 +14,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: $font-size;
     margin: 0;
-    
+
     @include mobile {
         font-size: $font-mobile;
     }
