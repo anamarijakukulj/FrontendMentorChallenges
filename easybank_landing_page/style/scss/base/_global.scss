@@ -2,6 +2,10 @@
 .content__box {
     margin: 0 15%;
     position: relative;
+    
+    @include mobile {
+        margin: 0 5%;
+    }
 }
 
 //COMPONENTS
