@@ -1,6 +1,9 @@
 .content__box {
   margin: 0 15%;
   position: relative; }
+  @media only screen and (max-width: 425px) {
+    .content__box {
+      margin: 0 5%; } }
 
 body {
   width: 100vw;
@@ -35,6 +38,9 @@ footer {
   height: 100%;
   display: flex;
   align-content: center; }
+  @media only screen and (max-width: 425px) {
+    .navigation {
+      display: none; } }
   .navigation__header {
     height: 100%;
     flex-wrap: wrap;
@@ -62,6 +68,9 @@ footer {
       .navigation__desktop a:hover, .navigation__desktop a:active {
         padding-bottom: 20px;
         border-bottom: 5px solid #35d45f; }
+  @media only screen and (max-width: 425px) {
+    .navigation__invite {
+      display: none; } }
   .navigation__social ul {
     padding: 0;
     margin: 0;
@@ -81,6 +90,15 @@ footer {
     font-weight: 300; }
     .navigation__footer a:hover {
       color: #35d45f; }
+  .navigation__mobile {
+    display: none; }
+    @media only screen and (max-width: 425px) {
+      .navigation__mobile {
+        display: block;
+        border: none;
+        background-color: transparent; }
+        .navigation__mobile--close {
+          display: none; } }
 
 .title {
   font-size: 26px;
@@ -105,6 +123,7 @@ footer {
   .section__title {
     font-size: 42px;
     margin-bottom: 30px;
+    color: #2d314d;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300; }
   .section--white {
