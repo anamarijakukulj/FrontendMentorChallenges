@@ -21,18 +21,15 @@
         @include mobile {
             width: 100%;
             top: 45%;
-
-            p {
-                margin: 0 0 30px;
-                padding: 0;
-                font-size: 14px;
-                line-height: 20px;
-                width: 100%;
-            }
         }
 
         .article__text {
             width: 85%;
+
+            @include mobile {
+                width: 100%;
+                margin: 0 0 40px;
+            }
         }
     }
 
