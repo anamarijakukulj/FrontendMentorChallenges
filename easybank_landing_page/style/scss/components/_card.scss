@@ -4,6 +4,11 @@
     background-color: $white;
     border-radius: 8px;
 
+    @include mobile {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
     &__title {
         margin-bottom: 50px;
     }
@@ -24,6 +29,11 @@
 .article {
     padding: 30px 20px;
 
+    @include mobile {
+        text-align: left;
+        padding: 25px 30px;
+    }
+
     &__author {
         color: $grayish-blue;
         font-size: 12px;
@@ -32,6 +42,10 @@
     &__headline {
         font-size: 22px;
         margin-top: 0;
+
+        @include mobile {
+            font-size: 16px;
+        }
 
         a {
             color: $dark-blue;
@@ -45,5 +59,9 @@
     &__preview {
         font-size: 16px;
         color: $grayish-blue;
+
+        @include mobile {
+            font-size: 14px;
+        }
     }
 }
