@@ -14,6 +14,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: $font-size;
     margin: 0;
+    
+    @include mobile {
+        font-size: $font-mobile;
+    }
 }
 
 a {
