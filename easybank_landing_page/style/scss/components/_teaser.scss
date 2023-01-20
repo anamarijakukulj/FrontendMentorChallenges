@@ -6,12 +6,30 @@
     .content__box {
         height: 100%;
         @include flex;
+
+        @include mobile {
+            @include flex(space-between, center, column);
+            text-align: center;
+        }
     }
 
     &__text {
         position: relative;
         width: 40%;
         top: -5%;
+
+        @include mobile {
+            width: 100%;
+            top: 45%;
+
+            p {
+                margin: 0 0 30px;
+                padding: 0;
+                font-size: 14px;
+                line-height: 20px;
+                width: 100%;
+            }
+        }
 
         .article__text {
             width: 85%;
@@ -24,5 +42,11 @@
         margin-bottom: 24px;
         color: $dark-blue;
         @include font_weight(300);
+
+        @include mobile {
+            font-size: 42px;
+            line-height: 50px;
+            text-align: center;
+        }
     }
 }
