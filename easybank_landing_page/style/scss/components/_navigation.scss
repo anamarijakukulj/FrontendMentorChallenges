@@ -5,6 +5,10 @@
     display: flex;
     align-content: center;
 
+    @include mobile {
+        display: none;
+    }
+
     &__header {
         height: 100%;
         flex-wrap: wrap;
@@ -29,6 +33,12 @@
                 padding-bottom: 20px;
                 border-bottom: 5px solid $lime-green;
             }
+        }
+    }
+
+    &__invite {
+        @include mobile {
+            display: none;
         }
     }
 
@@ -59,6 +69,21 @@
 
             &:hover {
                 color: $lime-green;
+            }
+        }
+    }
+
+    //MOBILE
+    &__mobile {
+        display: none;
+
+        @include mobile {
+            display: block;
+            border: none;
+            background-color: transparent;
+
+            &--close {
+                display: none;
             }
         }
     }
