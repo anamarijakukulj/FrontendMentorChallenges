@@ -7,6 +7,13 @@
 
     @include mobile {
         display: none;
+        position: absolute;
+        top: 120%;
+        width: 100%;
+        height: auto;
+        padding: 40px 0;
+        background-color: $white;
+        border-radius: 8px;
     }
 
     &__header {
@@ -23,10 +30,23 @@
         flex-wrap: wrap;
         @include flex();
 
+        @include mobile {
+            flex-direction: column;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+
         a {
             font-size: 14px;
             color: $grayish-blue;
             @include font_weight(400);
+
+            @include mobile {
+                font-size: 16px;
+                color: $dark-blue;
+            }
 
             &:hover,
             &:active {
@@ -107,7 +127,7 @@
             border: none;
             background-color: transparent;
 
-            &--close {
+            &--hidden {
                 display: none;
             }
         }
