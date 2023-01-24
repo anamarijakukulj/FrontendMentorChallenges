@@ -28,13 +28,13 @@
                 <img src="images/logo.svg" alt="logo">
             </div>
 
-            <button class="navigation__mobile" role="button">
-                <img class="navigation__mobile--open" src="images/icons/icon-hamburger.svg"
-                    alt="open mobile navigation">
-                <img class="navigation__mobile--close" src="images/icons/icon-close.svg" alt="close mobile navigation">
+            <button id="menu_button" class="navigation__mobile" role="button">
+                <img id="nav_open" src="images/icons/icon-hamburger.svg" alt="open mobile navigation">
+                <img id="nav_close" class="navigation__mobile--hidden" src="images/icons/icon-close.svg"
+                    alt="close mobile navigation">
             </button>
 
-            <nav class="navigation">
+            <nav id="navigation_block" class="navigation">
                 <ul class="navigation__desktop">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -50,7 +50,7 @@
         </section>
     </header>
 
-    <main>
+    <main id="main">
         <div class="teaser">
             <section class="content__box">
                 <article class="teaser__text">
@@ -261,6 +261,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
