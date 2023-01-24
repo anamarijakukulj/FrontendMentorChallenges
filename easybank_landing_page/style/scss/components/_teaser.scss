@@ -17,6 +17,10 @@
         position: relative;
         width: 40%;
         top: -5%;
+        
+        @include tablet {
+            width: 50%;
+        }
 
         @include mobile {
             width: 100%;
@@ -26,6 +30,10 @@
 
         .article__text {
             width: 85%;
+            
+            @include tablet {
+            width: 90%;
+        }
 
             @include mobile {
                 width: 100%;
