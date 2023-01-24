@@ -173,6 +173,7 @@ footer {
       width: 70%; } }
   @media only screen and (max-width: 770px) and (max-width: 425px) {
     .article__text {
+      font-size: 14px;
       width: 100%;
       margin: 0 0 30px; } }
   @media only screen and (max-width: 425px) {
@@ -243,11 +244,9 @@ footer {
     .perks__description {
       width: 100%;
       margin-bottom: 20px; } }
-  .perks__description p {
-    font-size: 16px; }
-    @media only screen and (max-width: 425px) {
-      .perks__description p {
-        margin-top: 5px; } }
+  @media only screen and (max-width: 425px) {
+    .perks__description p {
+      margin-top: 5px; } }
 
 .teaser {
   width: 100vw;
