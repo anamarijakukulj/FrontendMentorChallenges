@@ -1,6 +1,9 @@
 .content__box {
   margin: 0 15%;
   position: relative; }
+  @media only screen and (max-width: 770px) {
+    .content__box {
+      margin: 0 3%; } }
   @media only screen and (max-width: 425px) {
     .content__box {
       margin: 0 5%; } }
@@ -44,6 +47,14 @@ footer {
   height: 100%;
   display: flex;
   align-content: center; }
+  @media only screen and (max-width: 770px) {
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      flex-direction: row;
+      width: 40%; } }
   @media only screen and (max-width: 425px) {
     .navigation {
       display: none;
@@ -154,6 +165,16 @@ footer {
   line-height: 30px;
   margin-bottom: 30px;
   padding-right: 25px; }
+  @media only screen and (max-width: 770px) {
+    .article__text {
+      line-height: 26px;
+      font-size: 16px;
+      margin: 0 auto 30px;
+      width: 70%; } }
+  @media only screen and (max-width: 770px) and (max-width: 425px) {
+    .article__text {
+      width: 100%;
+      margin: 0 0 30px; } }
   @media only screen and (max-width: 425px) {
     .article__text {
       line-height: 24px;
@@ -170,7 +191,7 @@ footer {
   .section__intro {
     width: 50%;
     margin-bottom: 70px; }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 770px) {
       .section__intro {
         width: 100%;
         text-align: center;
@@ -181,6 +202,9 @@ footer {
     color: #2d314d;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300; }
+    @media only screen and (max-width: 770px) {
+      .section__title {
+        font-size: 36px; } }
     @media only screen and (max-width: 425px) {
       .section__title {
         font-size: 36px;
@@ -197,6 +221,9 @@ footer {
   align-items: center;
   align-content: center;
   flex-direction: row; }
+  @media only screen and (max-width: 770px) {
+    .flex__row {
+      flex-wrap: wrap; } }
   @media only screen and (max-width: 425px) {
     .flex__row {
       text-align: center;
@@ -208,6 +235,10 @@ footer {
 
 .perks__description {
   width: 23%; }
+  @media only screen and (max-width: 770px) {
+    .perks__description {
+      width: 50%;
+      text-align: center; } }
   @media only screen and (max-width: 425px) {
     .perks__description {
       width: 100%;
@@ -241,6 +272,9 @@ footer {
     position: relative;
     width: 40%;
     top: -5%; }
+    @media only screen and (max-width: 770px) {
+      .teaser__text {
+        width: 50%; } }
     @media only screen and (max-width: 425px) {
       .teaser__text {
         width: 100%;
@@ -248,6 +282,9 @@ footer {
         text-align: center; } }
     .teaser__text .article__text {
       width: 85%; }
+      @media only screen and (max-width: 770px) {
+        .teaser__text .article__text {
+          width: 90%; } }
       @media only screen and (max-width: 425px) {
         .teaser__text .article__text {
           width: 100%;
@@ -259,6 +296,9 @@ footer {
     color: #2d314d;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300; }
+    @media only screen and (max-width: 770px) {
+      .teaser__title {
+        font-size: 48px; } }
     @media only screen and (max-width: 425px) {
       .teaser__title {
         font-size: 42px;
@@ -277,6 +317,10 @@ footer {
   font-size: 14px;
   font-weight: 400;
   background: linear-gradient(0.25turn, #35d45f, #2bb7da); }
+  @media only screen and (max-width: 770px) {
+    .invite {
+      width: 100px;
+      height: 20px; } }
   @media only screen and (max-width: 425px) {
     .invite {
       margin: 0 auto; } }
@@ -311,6 +355,9 @@ footer {
   top: -35%;
   right: -18%;
   z-index: 0; }
+  @media only screen and (max-width: 770px) {
+    .teaser__background {
+      right: -110%; } }
   @media only screen and (max-width: 425px) {
     .teaser__background {
       right: -90%;
@@ -324,6 +371,10 @@ footer {
   height: 60%;
   background-color: #ffffff;
   border-radius: 8px; }
+  @media only screen and (max-width: 770px) {
+    .card {
+      width: 48%;
+      margin-bottom: 30px; } }
   @media only screen and (max-width: 425px) {
     .card {
       width: 100%;
