@@ -235,7 +235,7 @@ footer {
       flex-direction: column; } }
 
 .perks__description {
-  width: 23%; }
+  width: 24%; }
   @media only screen and (max-width: 770px) {
     .perks__description {
       width: 50%;
