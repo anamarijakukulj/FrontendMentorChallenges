@@ -4,6 +4,11 @@
     height: 100%;
     display: flex;
     align-content: center;
+    
+    @include tablet {
+        @include flex();
+        width: 40%;
+    }
 
     @include mobile {
         display: none;
