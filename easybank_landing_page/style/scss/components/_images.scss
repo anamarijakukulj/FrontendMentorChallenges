@@ -32,6 +32,10 @@
         top: -35%;
         right: -18%;
         z-index: 0;
+        
+        @include tablet {
+            right: -110%;
+        }
 
         @include mobile {
             right: -90%;
