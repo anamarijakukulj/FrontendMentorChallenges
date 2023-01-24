@@ -11,7 +11,7 @@
 body {
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0; }
   @media only screen and (max-width: 425px) {
     body {
@@ -163,8 +163,7 @@ footer {
 .article__text {
   color: #9698a6;
   line-height: 30px;
-  margin-bottom: 30px;
-  padding-right: 25px; }
+  margin-bottom: 30px; }
   @media only screen and (max-width: 770px) {
     .article__text {
       line-height: 26px;
@@ -236,6 +235,8 @@ footer {
 
 .perks__description {
   width: 24%; }
+  .perks__description p {
+    font-size: 14px; }
   @media only screen and (max-width: 770px) {
     .perks__description {
       width: 50%;
@@ -269,7 +270,7 @@ footer {
         text-align: center; } }
   .teaser__text {
     position: relative;
-    width: 40%;
+    width: 50%;
     top: -5%; }
     @media only screen and (max-width: 770px) {
       .teaser__text {
@@ -280,7 +281,7 @@ footer {
         top: 45%;
         text-align: center; } }
     .teaser__text .article__text {
-      width: 85%; }
+      width: 80%; }
       @media only screen and (max-width: 770px) {
         .teaser__text .article__text {
           width: 90%; } }
@@ -289,8 +290,8 @@ footer {
           width: 100%;
           margin: 0 0 40px; } }
   .teaser__title {
-    font-size: 64px;
-    line-height: 72px;
+    font-size: 56px;
+    line-height: 64px;
     margin-bottom: 24px;
     color: #2d314d;
     font-family: 'Open Sans', sans-serif;
@@ -352,7 +353,7 @@ footer {
   position: absolute;
   height: 150%;
   top: -35%;
-  right: -18%;
+  right: -30%;
   z-index: 0; }
   @media only screen and (max-width: 770px) {
     .teaser__background {
@@ -408,11 +409,8 @@ footer {
       .article__headline a:hover {
         color: #35d45f; }
   .article__preview {
-    font-size: 16px;
+    font-size: 14px;
     color: #9698a6; }
-    @media only screen and (max-width: 425px) {
-      .article__preview {
-        font-size: 14px; } }
 
 .footer {
   padding: 50px 0;

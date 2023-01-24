@@ -3,8 +3,8 @@
     height: 60%;
     background-color: $white;
     border-radius: 8px;
-    
-     @include tablet {
+
+    @include tablet {
         width: 48%;
         margin-bottom: 30px;
     }
@@ -62,11 +62,7 @@
     }
 
     &__preview {
-        font-size: 16px;
+        font-size: 14px;
         color: $grayish-blue;
-
-        @include mobile {
-            font-size: 14px;
-        }
     }
 }

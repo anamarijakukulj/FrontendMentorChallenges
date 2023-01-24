@@ -30,9 +30,9 @@
         position: absolute;
         height: 150%;
         top: -35%;
-        right: -18%;
+        right: -30%;
         z-index: 0;
-        
+
         @include tablet {
             right: -110%;
         }

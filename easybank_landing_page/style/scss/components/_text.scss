@@ -13,7 +13,6 @@
   color: $grayish-blue;
   line-height: 30px;
   margin-bottom: 30px;
-  padding-right: 25px;
 
   @include tablet {
     line-height: 26px;
@@ -96,6 +95,10 @@
 
 .perks__description {
   width: 24%;
+
+  p {
+    font-size: 14px;
+  }
 
   @include tablet {
     width: 50%;
