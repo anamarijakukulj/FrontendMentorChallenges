@@ -1,0 +1,15 @@
+{
+  "name": "sunnyside-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w style/sass/ -o style/css/"
+  },
+  "author": "Anamarija Kukulj",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
