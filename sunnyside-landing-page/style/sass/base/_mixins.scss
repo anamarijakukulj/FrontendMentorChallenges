@@ -6,6 +6,11 @@
     flex-direction: $flex-direction;
 }
 
+@mixin font($family, $sans, $weight) {
+    font-family: $family, $sans;
+    font-weight: $weight;
+}
+
 @mixin mobile {
     @media only screen and (max-width: $mobile) {
         @content;
