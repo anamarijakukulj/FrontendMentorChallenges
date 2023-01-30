@@ -3,7 +3,7 @@ body {
   width: 100vw;
   overflow: hidden; }
 
-head,
+header,
 main {
   width: 100%; }
 
@@ -12,3 +12,32 @@ a {
 
 ul {
   list-style: none; }
+
+.header {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row; }
+  .header nav {
+    width: 30%; }
+  .header__navigation {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row; }
+    .header__navigation_item {
+      color: #ffffff;
+      font-family: Barlow, sans-serif;
+      font-weight: 400; }
+  .header__contact {
+    background-color: #ffffff;
+    color: #23303e;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 32px;
+    font-family: Fraunces, serif;
+    font-weight: 700; }
