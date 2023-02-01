@@ -8,11 +8,10 @@
         padding: 5% 0;
 
         h1 {
-            font-size: 64px;
             color: $white;
             letter-spacing: 8px;
             margin-bottom: 80px;
-            @include font(Fraunces, serif, 900);
+            @include font(Fraunces, serif, 900, 64px);
         }
     }
 }
