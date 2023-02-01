@@ -1,0 +1,21 @@
+.box {
+    width: 50%;
+
+    &__text {
+        @extend .box;
+    }
+
+    div {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.article {
+    &__grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+}
