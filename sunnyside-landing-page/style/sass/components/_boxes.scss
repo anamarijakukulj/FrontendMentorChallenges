@@ -1,12 +1,21 @@
 .box {
-    width: 50%;
+    width: 100%;
 
     &__text {
+        position: relative;
         @extend .box;
     }
 
+    &__mix {
+        @extend .box;
+
+        h3 {
+            margin: 0;
+        }
+    }
+
     div {
-        height: 100%;
+        height: 70vh;
         width: 100%;
     }
 }
@@ -17,5 +26,38 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0;
+    }
+
+    &__left,
+    &__right {
+        width: 62%;
+        position: absolute;
+        top: 20%;
+    }
+
+    &__left {
+        left: 22%;
+    }
+
+    &__right {
+        left: 15%;
+    }
+
+    &__title {
+        color: $des-blue;
+        @include font(Fraunces, serif, 700, 42px);
+    }
+
+    &__text {
+        line-height: 25px;
+        padding-right: 5px;
+        margin-bottom: 30px;
+        color: $grayish-dark-blue;
+        @include font(Barlow, sans-serif, 400, $font-size);
+    }
+
+    &__more {
+        color: $des-blue;
+        @include font(Fraunces, serif, 700, $font-size);
     }
 }
