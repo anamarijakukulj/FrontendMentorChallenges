@@ -13,16 +13,15 @@
 
         &_item {
             color: $white;
-            @include font(Barlow, sans-serif, 400);
+            @include font(Barlow, sans-serif, 400, 16px);
         }
     }
 
     &__contact {
         background-color: $white;
         color: $des-blue;
-        font-size: 16px;
         padding: 10px 25px;
         border-radius: 32px;
-        @include font(Fraunces, serif, 700);
+        @include font(Fraunces, serif, 700, 16px);
     }
 }
