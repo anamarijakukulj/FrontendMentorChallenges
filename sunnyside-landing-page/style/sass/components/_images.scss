@@ -1,0 +1,10 @@
+.teaser__image {
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+
+    img {
+        width: 100%;
+    }
+}
