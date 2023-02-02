@@ -1,0 +1,37 @@
+footer {
+    background-color: $moderate-light-cyan;
+    opacity: 100%;
+}
+
+.footer {
+    @include flex(space-between, center, column);
+    padding: 60px 0 30px;
+
+    &__logo {
+        margin-bottom: 15px;
+        width: 8%;
+
+        img {
+            width: 100%;
+            filter: invert(46%) sepia(39%) saturate(470%) hue-rotate(118deg) brightness(60%) contrast(95%);
+        }
+    }
+
+    .navigation {
+        width: 14%;
+        margin-bottom: 40px;
+
+        &__list {
+            @include flex();
+
+            a {
+                color: $moderate-cyan;
+                @include font(Barlow, sans-serif, 400, 16px);
+            }
+        }
+
+        &__social {
+            width: 8%;
+        }
+    }
+}
