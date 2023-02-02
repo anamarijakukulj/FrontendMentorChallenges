@@ -91,8 +91,11 @@ ul {
     top: 65%;
     width: 100%;
     z-index: -1;
-    border-bottom: 8px solid #fad4005d;
-    border-radius: 8px; }
+    border-bottom: 8px solid #fad400;
+    border-radius: 8px;
+    opacity: 40%; }
+  .more__yellow:hover::before {
+    opacity: 100%; }
 
 .more__red {
   position: relative; }
@@ -103,8 +106,11 @@ ul {
     top: 65%;
     width: 100%;
     z-index: -1;
-    border-bottom: 8px solid #fe796757;
-    border-radius: 8px; }
+    border-bottom: 8px solid #fe7867;
+    border-radius: 8px;
+    opacity: 40%; }
+  .more__red:hover::before {
+    opacity: 100%; }
 
 .teaser__image {
   width: 100vw;
@@ -156,6 +162,9 @@ ul {
     font-family: Fraunces, serif;
     font-weight: 700;
     font-size: 16px; }
+    .header__contact:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #ffffff; }
 
 .teaser {
   position: relative;
@@ -248,5 +257,9 @@ footer {
         font-family: Barlow, sans-serif;
         font-weight: 400;
         font-size: 16px; }
+        .footer .navigation__list a:hover {
+          color: #ffffff; }
+        .footer .navigation__list a img:hover {
+          filter: invert(100%) sepia(96%) saturate(17%) hue-rotate(311deg) brightness(150%) contrast(104%); }
     .footer .navigation__social {
       width: 8%; }
