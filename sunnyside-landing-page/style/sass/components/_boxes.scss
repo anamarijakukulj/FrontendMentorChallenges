@@ -98,6 +98,11 @@
             z-index: -1;
             border-bottom: 8px solid $yellow;
             border-radius: 8px;
+            opacity: 40%;
+        }
+
+        &:hover::before {
+            opacity: 100%;
         }
     }
 
@@ -113,6 +118,12 @@
             z-index: -1;
             border-bottom: 8px solid $red;
             border-radius: 8px;
+            opacity: 40%;
+
+        }
+
+        &:hover::before {
+            opacity: 100%;
         }
     }
 }
