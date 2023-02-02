@@ -7,16 +7,38 @@
     }
 
     &__mix {
+        position: relative;
         @extend .box;
+
+        article {
+            position: absolute;
+            top: 70%;
+            left: 25%;
+            width: 50%;
+            text-align: center;
+
+            .blue {
+                color: $dark-blue;
+            }
+        }
 
         h3 {
             margin: 0;
+            color: $des-cyan;
+            @include font(Fraunces, serif, 700, 28px);
+        }
+
+        p {
+            color: $des-cyan;
+            line-height: 20px;
+            @include font(Barlow, sans-serif, 600, 16px);
         }
     }
 
     div {
         height: 70vh;
         width: 100%;
+        background-size: cover;
     }
 }
 
@@ -53,11 +75,44 @@
         padding-right: 5px;
         margin-bottom: 30px;
         color: $grayish-dark-blue;
-        @include font(Barlow, sans-serif, 400, $font-size);
+        @include font(Barlow, sans-serif, 600, $font-size);
     }
 
     &__more {
         color: $des-blue;
+        padding: 0 5px;
         @include font(Fraunces, serif, 700, $font-size);
+    }
+}
+
+.more {
+    &__yellow {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 65%;
+            width: 100%;
+            z-index: -1;
+            border-bottom: 8px solid $yellow;
+            border-radius: 8px;
+        }
+    }
+
+    &__red {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 65%;
+            width: 100%;
+            z-index: -1;
+            border-bottom: 8px solid $red;
+            border-radius: 8px;
+        }
     }
 }
