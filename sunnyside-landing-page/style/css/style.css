@@ -15,8 +15,28 @@ ul {
   width: 100%; }
   .box__text {
     position: relative; }
-  .box__mix h3 {
-    margin: 0; }
+  .box__mix {
+    position: relative; }
+    .box__mix article {
+      position: absolute;
+      top: 70%;
+      left: 25%;
+      width: 50%;
+      text-align: center; }
+    .box__mix h3 {
+      margin: 0;
+      color: #25564b;
+      font-family: Fraunces, serif;
+      font-weight: 900;
+      font-size: 30px; }
+    .box__mix p {
+      color: #25564b;
+      line-height: 24px;
+      font-family: Barlow, sans-serif;
+      font-weight: 400;
+      font-size: 16px; }
+    .box__mix .blue {
+      color: #19536b; }
   .box div, .box__text div, .box__mix div {
     height: 70vh;
     width: 100%; }
