@@ -27,6 +27,14 @@ footer {
             a {
                 color: $moderate-cyan;
                 @include font(Barlow, sans-serif, 400, 16px);
+
+                &:hover {
+                    color: $white;
+                }
+
+                img:hover {
+                    filter: invert(100%) sepia(96%) saturate(17%) hue-rotate(311deg) brightness(150%) contrast(104%);
+                }
             }
         }
 
