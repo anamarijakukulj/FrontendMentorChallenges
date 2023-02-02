@@ -1,0 +1,49 @@
+.testimonials {
+    padding: 10%;
+    text-align: center;
+
+    &__title {
+        letter-spacing: 5px;
+        margin: 0 0 100px;
+        color: $grayish-blue;
+        @include font(Fraunces, serif, 700, 26px);
+    }
+
+    &__cards {
+        @include flex();
+    }
+
+    &__person {
+        text-align: center;
+        width: 30%;
+    }
+
+    &__image {
+        margin-bottom: 50px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+
+    &__text {
+        color: $grayish-verydark-blue;
+        line-height: 28px;
+        margin-bottom: 50px;
+        @include font(Barlow, sans-serif, 600, $font-size);
+    }
+
+    &__name {
+        color: $des-blue;
+        margin-bottom: 20px;
+        @include font(Fraunces, serif, 900, $font-size);
+    }
+
+    &__position {
+        margin: 0;
+        color: $grayish-blue;
+        @include font(Barlow, sans-serif, 600, $font-size);
+    }
+}
