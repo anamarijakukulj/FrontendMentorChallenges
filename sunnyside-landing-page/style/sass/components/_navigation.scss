@@ -3,8 +3,16 @@
     background-image: url(../../../images/desktop/image-header.jpg);
     @include flex();
 
+    @include mobile {
+        padding: 20px;
+    }
+
     nav {
         width: 30%;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__navigation {
@@ -28,5 +36,15 @@
             background-color: rgba(255, 255, 255, 0.3);
             color: $white;
         }
+    }
+}
+
+.mobile__navigation {
+    display: none;
+
+    @include mobile {
+        display: inline-block;
+        border: none;
+        background: transparent;
     }
 }
