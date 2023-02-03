@@ -4,12 +4,21 @@ footer {
 }
 
 .footer {
-    @include flex(space-between, center, column);
     padding: 60px 0 30px;
+    flex-wrap: wrap;
+    @include flex(space-between, center, column);
+
+    @include mobile {
+        padding-bottom: 60px;
+    }
 
     &__logo {
         margin-bottom: 15px;
-        width: 8%;
+        width: 10%;
+
+        @include mobile {
+            width: 50%;
+        }
 
         img {
             width: 100%;
@@ -18,15 +27,19 @@ footer {
     }
 
     .navigation {
-        width: 14%;
+        width: 20%;
         margin-bottom: 40px;
+
+        @include mobile {
+            width: 80%
+        }
 
         &__list {
             @include flex();
 
             a {
                 color: $moderate-cyan;
-                @include font(Barlow, sans-serif, 400, 16px);
+                @include font(Barlow, sans-serif, 600, 16px);
 
                 &:hover {
                     color: $white;
@@ -39,7 +52,11 @@ footer {
         }
 
         &__social {
-            width: 8%;
+            width: 10%;
+
+            @include mobile {
+                width: 50%;
+            }
         }
     }
 }
