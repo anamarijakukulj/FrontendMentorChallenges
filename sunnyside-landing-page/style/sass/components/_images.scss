@@ -1,20 +1,16 @@
-.teaser__image {
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
-    top: -10%;
-
-    img {
-        width: 100%;
-    }
-}
-
 .gallery {
     background-color: $moderate-light-cyan;
+    flex-wrap: wrap;
     @include flex();
 
     div {
         width: 25%;
+
+        @include mobile {
+            width: 50%;
+            height: 25vh;
+            overflow: hidden;
+        }
 
         img {
             width: 100%;
