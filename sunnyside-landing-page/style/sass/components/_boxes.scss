@@ -2,13 +2,33 @@
     width: 100%;
     height: 70vh;
 
+    @include mobile {
+        height: auto;
+    }
+
     &__text {
         @extend .box;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 
     &__mix {
         position: relative;
-        @extend .box;
+        width: 100%;
+        height: 70vh;
+
+        div {
+            height: 70vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+
+            @include mobile {
+                background-image: 200% 100%;
+            }
+        }
 
         article {
             position: absolute;
@@ -16,6 +36,12 @@
             left: 25%;
             width: 50%;
             text-align: center;
+
+            @include mobile {
+                width: 90%;
+                top: 68%;
+                left: 5%;
+            }
 
             .blue {
                 color: $dark-blue;
@@ -25,12 +51,16 @@
         h3 {
             margin: 0;
             color: $des-cyan;
-            @include font(Fraunces, serif, 700, 28px);
+            @include font(Fraunces, serif, 900, 28px);
+
+            @include mobile {
+                margin-bottom: 30px;
+            }
         }
 
         p {
             color: $des-cyan;
-            line-height: 20px;
+            line-height: 26px;
             @include font(Barlow, sans-serif, 600, 16px);
         }
     }
@@ -39,7 +69,11 @@
         height: 70vh;
         width: 100%;
         background-size: cover;
+        background-position: center;
 
+        @include mobile {
+            height: 40vh;
+        }
     }
 }
 
@@ -52,42 +86,95 @@
 
         @include mobile {
             grid-template-columns: repeat(1, 1fr);
+
+            &_first {
+                order: 1;
+            }
+
+            &_second {
+                order: 2;
+            }
+
+            &_third {
+                order: 3;
+            }
+
+            &_fourth {
+                order: 4;
+            }
+
+            &_fifth {
+                order: 5;
+            }
+
+            &_sixth {
+                order: 6;
+            }
         }
     }
 
     &__left,
     &__right {
         width: 65%;
-        padding-top: 15%;
+        padding-top: 12%;
+
+        @include mobile {
+            width: 100%;
+            padding: 10% 0 20%;
+        }
     }
 
     &__left {
         padding-left: 22%;
+
+        @include mobile {
+            padding-left: 0;
+        }
     }
 
     &__right {
         padding-left: 15%;
+
+        @include mobile {
+            padding-left: 0;
+        }
     }
 
     &__title {
         width: 90%;
         color: $des-blue;
         @include font(Fraunces, serif, 700, 42px);
+
+        @include mobile {
+            width: 85%;
+            font-size: 32px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__text {
         width: 96%;
-        line-height: 25px;
+        line-height: 28px;
         padding-right: 5px;
         margin-bottom: 30px;
         color: $grayish-dark-blue;
         @include font(Barlow, sans-serif, 600, $font-size);
+
+        @include mobile {
+            width: 85%;
+            margin: 0 auto 40px;
+        }
     }
 
     &__more {
         color: $des-blue;
         padding: 0 5px;
         @include font(Fraunces, serif, 700, $font-size);
+
+        @include mobile {
+            font-size: 16px;
+        }
     }
 }
 
@@ -105,6 +192,10 @@
             border-bottom: 8px solid $yellow;
             border-radius: 8px;
             opacity: 40%;
+
+            @include mobile {
+                left: 0;
+            }
         }
 
         &:hover::before {
@@ -126,6 +217,9 @@
             border-radius: 8px;
             opacity: 40%;
 
+            @include mobile {
+                left: 0;
+            }
         }
 
         &:hover::before {
