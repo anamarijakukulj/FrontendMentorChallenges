@@ -14,9 +14,7 @@ const closeNavigation = () => {
 const clickButton = () => {
     if(navigation.style.display = "block") {
         closeNavigation();
-    } 
-
-    if(navigation.style.display = "none") {
+    } else if(navigation.style.display = "none") {
         openNavigation();
     }
 }
