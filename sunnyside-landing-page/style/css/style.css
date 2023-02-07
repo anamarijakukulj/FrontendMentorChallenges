@@ -216,6 +216,9 @@ ul {
       position: relative; } }
   .header nav {
     width: 30%; }
+    @media only screen and (min-width: 430px) and (max-width: 1024px) {
+      .header nav {
+        width: 50%; } }
     @media only screen and (max-width: 425px) {
       .header nav {
         display: none;
@@ -288,6 +291,11 @@ ul {
   text-align: center;
   height: 90vh;
   background-size: 100% 100%; }
+  @media only screen and (min-width: 430px) and (max-width: 1024px) {
+    .teaser {
+      height: 70vh;
+      background-size: 150% 100%;
+      background-position: center; } }
   @media only screen and (max-width: 425px) {
     .teaser {
       height: 60vh;
@@ -302,6 +310,10 @@ ul {
       font-family: Fraunces, serif;
       font-weight: 900;
       font-size: 64px; }
+      @media only screen and (min-width: 430px) and (max-width: 1024px) {
+        .teaser__intro h1 {
+          font-size: 54px;
+          margin-bottom: 60px; } }
       @media only screen and (max-width: 425px) {
         .teaser__intro h1 {
           font-size: 40px;
