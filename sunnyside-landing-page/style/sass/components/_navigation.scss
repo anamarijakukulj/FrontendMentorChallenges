@@ -10,6 +10,10 @@
 
     nav {
         width: 30%;
+        
+         @include tablet {
+            width: 50%;
+        }
 
         @include mobile {
             display: none;
