@@ -10,6 +10,10 @@
         padding: 18% 5% 10%;
     }
 
+    @include hd-desktop {
+        padding: 10% 5%;
+    }
+
     &__title {
         letter-spacing: 5px;
         margin: 0 0 100px;
@@ -41,6 +45,10 @@
         @include tablet {
             width: 100%;
             margin-bottom: 80px;
+        }
+
+        @include hd-desktop {
+            width: 32%;
         }
     }
 
@@ -80,7 +88,7 @@
 
     &__name {
         color: $des-blue;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         @include font(Fraunces, serif, 900, $font-size);
 
         @include tablet {
@@ -95,15 +103,10 @@
     &__position {
         margin: 0;
         color: $grayish-blue;
-        @include font(Barlow, sans-serif, 600, $font-size);
+        @include font(Barlow, sans-serif, 600, 16px);
 
         @include tablet {
             font-weight: 400;
-            font-size: 16px;
-        }
-
-        @include mobile {
-            font-size: 14px;
         }
     }
 }
