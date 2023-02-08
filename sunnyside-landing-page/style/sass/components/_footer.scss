@@ -49,6 +49,10 @@ footer {
                 color: $moderate-cyan;
                 @include font(Barlow, sans-serif, 600, 16px);
 
+                @include hd-desktop {
+                    font-size: $font-size;
+                }
+
                 &:hover {
                     color: $white;
                 }
