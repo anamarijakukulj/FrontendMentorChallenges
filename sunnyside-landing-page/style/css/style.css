@@ -12,9 +12,14 @@ ul {
   list-style: none;
   padding: 0; }
 
-.box, .box__text {
+.box, .box__text, .box__image {
   width: 50%;
   height: inherit; }
+  @media only screen and (max-width: 425px) {
+    .box, .box__text, .box__image {
+      width: 100%;
+      height: 55vh;
+      text-align: center; } }
   .box__grid {
     display: grid;
     width: 100vw;
@@ -23,21 +28,43 @@ ul {
  "graphic photography"; }
     .box__grid .transform {
       grid-area: transform; }
+      @media only screen and (max-width: 425px) {
+        .box__grid .transform {
+          flex-direction: column-reverse; } }
     .box__grid .stand {
       grid-area: stand; }
     .box__grid .graphic {
       grid-area: graphic; }
     .box__grid .photography {
       grid-area: photography; }
+    @media only screen and (max-width: 425px) {
+      .box__grid {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-direction: column; } }
   .box__component {
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     flex-direction: row; }
+    @media only screen and (max-width: 425px) {
+      .box__component {
+        flex-direction: column;
+        height: auto; } }
   .box__text {
     padding-top: 13%; }
+    @media only screen and (max-width: 425px) {
+      .box__text {
+        padding-top: 20%; } }
+  @media only screen and (max-width: 425px) {
+    .box__image {
+      height: 40vh;
+      background-position: center;
+      background-size: cover; } }
   .box__mix {
     position: relative;
     width: 100%;
@@ -59,7 +86,7 @@ ul {
       @media only screen and (max-width: 425px) {
         .box__mix article {
           width: 90%;
-          top: 68%;
+          top: 65%;
           left: 5%; } }
       .box__mix article .blue {
         color: #19536b; }
@@ -78,22 +105,38 @@ ul {
       font-family: Barlow, sans-serif;
       font-weight: 600;
       font-size: 18px; }
-  .box div, .box__text div {
+      @media only screen and (max-width: 425px) {
+        .box__mix p {
+          font-size: 16px; } }
+  .box div, .box__text div, .box__image div {
     background-size: cover;
     background-position: center; }
     @media only screen and (max-width: 425px) {
-      .box div, .box__text div {
+      .box div, .box__text div, .box__image div {
         height: 40vh; } }
 
-.article__right {
-  padding-left: 15%;
+.article__right, .article__left {
   width: 70%; }
+  @media only screen and (max-width: 425px) {
+    .article__right, .article__left {
+      width: 100%; } }
+
+.article__right {
+  padding-left: 15%; }
+  @media only screen and (max-width: 425px) {
+    .article__right {
+      padding-left: 0; } }
   .article__right .article__title {
     width: 90%; }
+    @media only screen and (max-width: 425px) {
+      .article__right .article__title {
+        width: 80%; } }
 
 .article__left {
-  padding-left: 20%;
-  width: 70%; }
+  padding-left: 20%; }
+  @media only screen and (max-width: 425px) {
+    .article__left {
+      padding-left: 0; } }
 
 .article__title {
   color: #23303e;
@@ -120,6 +163,7 @@ ul {
   @media only screen and (max-width: 425px) {
     .article__text {
       width: 85%;
+      font-size: 16px;
       margin: 0 auto 40px; } }
 
 .article__more {
