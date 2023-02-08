@@ -18,12 +18,14 @@ ul {
   @media only screen and (max-width: 425px) {
     .box, .box__text, .box__image {
       width: 100%;
-      height: 55vh;
+      height: 50vh;
       text-align: center; } }
   .box__grid {
     display: grid;
     width: 100vw;
-    grid-template-areas: "transform transform" "stand stand" "graphic photography"; }
+    grid-template-areas: "transform transform"
+ "stand stand"
+ "graphic photography"; }
     .box__grid .transform {
       grid-area: transform; }
       @media only screen and (max-width: 425px) {
@@ -64,6 +66,9 @@ ul {
     @media only screen and (max-width: 425px) {
       .box__text {
         padding-top: 20%; } }
+    @media only screen and (min-width: 1920px) {
+      .box__text {
+        padding-top: 8%; } }
   .box__image {
     background-position: center;
     background-size: cover; }
@@ -170,6 +175,9 @@ ul {
       font-size: 32px;
       margin-left: auto;
       margin-right: auto; } }
+  @media only screen and (min-width: 1920px) {
+    .article__title {
+      font-size: 48px; } }
 
 .article__text {
   line-height: 28px;
@@ -188,6 +196,10 @@ ul {
     .article__text {
       width: 85%;
       margin: 0 auto 40px; } }
+  @media only screen and (min-width: 1920px) {
+    .article__text {
+      width: 75%;
+      font-size: 20px; } }
 
 .article__more {
   color: #23303e;
@@ -265,6 +277,9 @@ ul {
     .header {
       padding: 20px;
       position: relative; } }
+  @media only screen and (min-width: 1920px) {
+    .header {
+      padding: 20px 50px; } }
   .header__nav {
     width: 30%; }
     @media only screen and (max-width: 1024px) {
@@ -273,6 +288,9 @@ ul {
     @media only screen and (max-width: 425px) {
       .header__nav {
         display: none; } }
+    @media only screen and (min-width: 1920px) {
+      .header__nav {
+        width: 40%; } }
   .header__navigation {
     padding: 0;
     display: flex;
@@ -297,6 +315,9 @@ ul {
           color: #818498;
           font-family: Barlow, sans-serif;
           font-weight: 600;
+          font-size: 18px; } }
+      @media only screen and (min-width: 1920px) {
+        .header__navigation_item {
           font-size: 18px; } }
   .header__contact {
     background-color: #ffffff;
@@ -385,6 +406,9 @@ ul {
   @media only screen and (max-width: 425px) {
     .testimonials {
       padding: 18% 5% 10%; } }
+  @media only screen and (min-width: 1920px) {
+    .testimonials {
+      padding: 10% 5%; } }
   .testimonials__title {
     letter-spacing: 5px;
     margin: 0 0 100px;
@@ -415,6 +439,9 @@ ul {
       .testimonials__person {
         width: 100%;
         margin-bottom: 80px; } }
+    @media only screen and (min-width: 1920px) {
+      .testimonials__person {
+        width: 32%; } }
   .testimonials__image {
     margin-bottom: 50px; }
     @media only screen and (max-width: 1024px) {
@@ -443,7 +470,7 @@ ul {
         font-size: 16px; } }
   .testimonials__name {
     color: #23303e;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: Fraunces, serif;
     font-weight: 900;
     font-size: 18px; }
@@ -458,14 +485,10 @@ ul {
     color: #a7abae;
     font-family: Barlow, sans-serif;
     font-weight: 600;
-    font-size: 18px; }
+    font-size: 16px; }
     @media only screen and (max-width: 1024px) {
       .testimonials__position {
-        font-weight: 400;
-        font-size: 16px; } }
-    @media only screen and (max-width: 425px) {
-      .testimonials__position {
-        font-size: 14px; } }
+        font-weight: 400; } }
 
 footer {
   background-color: #90d4c5;
@@ -514,6 +537,9 @@ footer {
         font-family: Barlow, sans-serif;
         font-weight: 600;
         font-size: 16px; }
+        @media only screen and (min-width: 1920px) {
+          .footer .navigation__list a {
+            font-size: 18px; } }
         .footer .navigation__list a:hover {
           color: #ffffff; }
         .footer .navigation__list a img:hover {
