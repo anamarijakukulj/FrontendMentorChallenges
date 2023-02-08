@@ -45,6 +45,10 @@
         height: 60vh;
         @include flex();
 
+        @include tablet {
+            height: 50vh;
+        }
+
         @include mobile {
             flex-direction: column;
             height: auto;
@@ -55,6 +59,10 @@
         padding-top: 13%;
         @extend .box;
 
+        @include tablet {
+            padding-top: 5%;
+        }
+
         @include mobile {
             padding-top: 20%;
         }
@@ -62,6 +70,11 @@
 
     &__image {
         @extend .box;
+
+        @include tablet {
+            background-position: center;
+            background-size: cover;
+        }
 
         @include mobile {
             height: 40vh;
@@ -93,10 +106,13 @@
             width: 55%;
             text-align: center;
 
-            @include mobile {
+            @include tablet {
                 width: 90%;
-                top: 65%;
                 left: 5%;
+            }
+
+            @include mobile {
+                top: 65%;
             }
 
             .blue {
@@ -119,7 +135,7 @@
             line-height: 26px;
             @include font(Barlow, sans-serif, 600, $font-size);
 
-            @include mobile {
+            @include tablet {
                 font-size: 16px;
             }
         }
@@ -141,6 +157,10 @@
     &__left {
         width: 70%;
 
+        @include tablet {
+            width: 90%;
+        }
+
         @include mobile {
             width: 100%;
         }
@@ -148,6 +168,10 @@
 
     &__right {
         padding-left: 15%;
+
+        @include tablet {
+            padding-left: 10%;
+        }
 
         @include mobile {
             padding-left: 0;
@@ -165,6 +189,10 @@
     &__left {
         padding-left: 20%;
 
+        @include tablet {
+            padding-left: 10%;
+        }
+
         @include mobile {
             padding-left: 0;
         }
@@ -174,6 +202,11 @@
         color: $des-blue;
         width: 80%;
         @include font(Fraunces, serif, 700, 42px);
+
+        @include tablet {
+            width: 90%;
+            font-size: 32px;
+        }
 
         @include mobile {
             width: 85%;
@@ -191,9 +224,13 @@
         color: $grayish-dark-blue;
         @include font(Barlow, sans-serif, 600, $font-size);
 
+        @include tablet {
+            width: 95%;
+            font-size: 16px;
+        }
+
         @include mobile {
             width: 85%;
-            font-size: 16px;
             margin: 0 auto 40px;
         }
     }
