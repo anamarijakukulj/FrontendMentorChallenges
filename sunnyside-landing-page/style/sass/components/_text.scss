@@ -2,6 +2,10 @@
     padding: 10%;
     text-align: center;
 
+    @include tablet {
+        padding: 15% 10% 8%;
+    }
+
     @include mobile {
         padding: 18% 5% 10%;
     }
@@ -12,6 +16,10 @@
         color: $grayish-blue;
         @include font(Fraunces, serif, 700, 26px);
 
+        @include tablet {
+            margin-bottom: 70px;
+        }
+
         @include mobile {
             font-size: 16px;
             margin-bottom: 70px;
@@ -21,7 +29,7 @@
     &__cards {
         @include flex();
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
     }
@@ -30,16 +38,16 @@
         text-align: center;
         width: 30%;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
-            margin-bottom: 70px;
+            margin-bottom: 80px;
         }
     }
 
     &__image {
         margin-bottom: 50px;
 
-        @include mobile {
+        @include tablet {
             margin-bottom: 30px;
         }
 
@@ -61,8 +69,12 @@
         margin-bottom: 50px;
         @include font(Barlow, sans-serif, 600, $font-size);
 
+        @include tablet {
+            margin-bottom: 20px;
+        }
+
         @include mobile {
-            margin-bottom: 30px;
+            font-size: 16px;
         }
     }
 
@@ -70,6 +82,10 @@
         color: $des-blue;
         margin-bottom: 20px;
         @include font(Fraunces, serif, 900, $font-size);
+
+        @include tablet {
+            margin-bottom: 5px;
+        }
 
         @include mobile {
             margin-bottom: 10px;
@@ -80,6 +96,11 @@
         margin: 0;
         color: $grayish-blue;
         @include font(Barlow, sans-serif, 600, $font-size);
+
+        @include tablet {
+            font-weight: 400;
+            font-size: 16px;
+        }
 
         @include mobile {
             font-size: 14px;
