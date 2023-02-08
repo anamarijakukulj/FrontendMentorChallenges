@@ -242,29 +242,14 @@ ul {
     .header {
       padding: 20px;
       position: relative; } }
-  .header nav {
+  .header__nav {
     width: 30%; }
     @media only screen and (min-width: 430px) and (max-width: 1024px) {
-      .header nav {
+      .header__nav {
         width: 50%; } }
     @media only screen and (max-width: 425px) {
-      .header nav {
-        display: none;
-        position: absolute;
-        top: 150%;
-        width: 88%;
-        padding: 7% 0 5%;
-        background-color: #ffffff; }
-        .header nav::before {
-          content: "";
-          position: absolute;
-          width: 0px;
-          height: 0px;
-          right: 0;
-          top: -25px;
-          border-bottom: 1px solid #ffffff;
-          border-right: 30px solid #ffffff;
-          border-top: 25px solid transparent; } }
+      .header__nav {
+        display: none; } }
   .header__navigation {
     padding: 0;
     display: flex;
@@ -313,6 +298,27 @@ ul {
       display: inline-block;
       border: none;
       background: transparent; } }
+
+.opacity {
+  opacity: 50%; }
+
+.nav__open {
+  display: inline-block;
+  position: absolute;
+  top: 150%;
+  width: 88%;
+  padding: 7% 0 5%;
+  background-color: #ffffff; }
+  .nav__open::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 0;
+    top: -25px;
+    border-bottom: 1px solid #ffffff;
+    border-right: 30px solid #ffffff;
+    border-top: 25px solid transparent; }
 
 .teaser {
   overflow: hidden;
