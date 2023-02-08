@@ -8,6 +8,10 @@
         position: relative;
     }
 
+    @include hd-desktop {
+        padding: 20px 50px;
+    }
+
     &__nav {
         width: 30%;
         
@@ -17,6 +21,10 @@
 
         @include mobile {
             display: none;
+        }
+
+        @include hd-desktop {
+            width: 40%;
         }
     }
 
@@ -43,6 +51,10 @@
             @include mobile {
                 color: $grayish-dark-blue;
                 @include font(Barlow, sans-serif, 600, $font-size);
+            }
+
+            @include hd-desktop {
+                font-size: $font-size;
             }
         }
     }
