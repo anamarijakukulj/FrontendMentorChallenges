@@ -51,15 +51,25 @@ ul {
     align-items: center;
     align-content: center;
     flex-direction: row; }
+    @media only screen and (max-width: 1024px) {
+      .box__component {
+        height: 50vh; } }
     @media only screen and (max-width: 425px) {
       .box__component {
         flex-direction: column;
         height: auto; } }
   .box__text {
     padding-top: 13%; }
+    @media only screen and (max-width: 1024px) {
+      .box__text {
+        padding-top: 5%; } }
     @media only screen and (max-width: 425px) {
       .box__text {
         padding-top: 20%; } }
+  @media only screen and (max-width: 1024px) {
+    .box__image {
+      background-position: center;
+      background-size: cover; } }
   @media only screen and (max-width: 425px) {
     .box__image {
       height: 40vh;
@@ -83,11 +93,13 @@ ul {
       left: 23%;
       width: 55%;
       text-align: center; }
-      @media only screen and (max-width: 425px) {
+      @media only screen and (max-width: 1024px) {
         .box__mix article {
           width: 90%;
-          top: 65%;
           left: 5%; } }
+      @media only screen and (max-width: 425px) {
+        .box__mix article {
+          top: 65%; } }
       .box__mix article .blue {
         color: #19536b; }
     .box__mix h2 {
@@ -105,7 +117,7 @@ ul {
       font-family: Barlow, sans-serif;
       font-weight: 600;
       font-size: 18px; }
-      @media only screen and (max-width: 425px) {
+      @media only screen and (max-width: 1024px) {
         .box__mix p {
           font-size: 16px; } }
   .box div, .box__text div, .box__image div {
@@ -117,12 +129,18 @@ ul {
 
 .article__right, .article__left {
   width: 70%; }
+  @media only screen and (max-width: 1024px) {
+    .article__right, .article__left {
+      width: 90%; } }
   @media only screen and (max-width: 425px) {
     .article__right, .article__left {
       width: 100%; } }
 
 .article__right {
   padding-left: 15%; }
+  @media only screen and (max-width: 1024px) {
+    .article__right {
+      padding-left: 10%; } }
   @media only screen and (max-width: 425px) {
     .article__right {
       padding-left: 0; } }
@@ -134,6 +152,9 @@ ul {
 
 .article__left {
   padding-left: 20%; }
+  @media only screen and (max-width: 1024px) {
+    .article__left {
+      padding-left: 10%; } }
   @media only screen and (max-width: 425px) {
     .article__left {
       padding-left: 0; } }
@@ -144,6 +165,10 @@ ul {
   font-family: Fraunces, serif;
   font-weight: 700;
   font-size: 42px; }
+  @media only screen and (max-width: 1024px) {
+    .article__title {
+      width: 90%;
+      font-size: 32px; } }
   @media only screen and (max-width: 425px) {
     .article__title {
       width: 85%;
@@ -160,10 +185,13 @@ ul {
   font-family: Barlow, sans-serif;
   font-weight: 600;
   font-size: 18px; }
+  @media only screen and (max-width: 1024px) {
+    .article__text {
+      width: 95%;
+      font-size: 16px; } }
   @media only screen and (max-width: 425px) {
     .article__text {
       width: 85%;
-      font-size: 16px;
       margin: 0 auto 40px; } }
 
 .article__more {
@@ -244,7 +272,7 @@ ul {
       position: relative; } }
   .header__nav {
     width: 30%; }
-    @media only screen and (min-width: 430px) and (max-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
       .header__nav {
         width: 50%; } }
     @media only screen and (max-width: 425px) {
@@ -325,7 +353,7 @@ ul {
   text-align: center;
   height: 90vh;
   background-size: 100% 100%; }
-  @media only screen and (min-width: 430px) and (max-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     .teaser {
       height: 70vh;
       background-size: 150% 100%;
@@ -344,7 +372,7 @@ ul {
       font-family: Fraunces, serif;
       font-weight: 900;
       font-size: 64px; }
-      @media only screen and (min-width: 430px) and (max-width: 1024px) {
+      @media only screen and (max-width: 1024px) {
         .teaser__intro h1 {
           font-size: 54px;
           margin-bottom: 60px; } }
@@ -356,6 +384,9 @@ ul {
 .testimonials {
   padding: 10%;
   text-align: center; }
+  @media only screen and (max-width: 1024px) {
+    .testimonials {
+      padding: 15% 10% 8%; } }
   @media only screen and (max-width: 425px) {
     .testimonials {
       padding: 18% 5% 10%; } }
@@ -366,6 +397,9 @@ ul {
     font-family: Fraunces, serif;
     font-weight: 700;
     font-size: 26px; }
+    @media only screen and (max-width: 1024px) {
+      .testimonials__title {
+        margin-bottom: 70px; } }
     @media only screen and (max-width: 425px) {
       .testimonials__title {
         font-size: 16px;
@@ -376,19 +410,19 @@ ul {
     align-items: center;
     align-content: center;
     flex-direction: row; }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 1024px) {
       .testimonials__cards {
         flex-direction: column; } }
   .testimonials__person {
     text-align: center;
     width: 30%; }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 1024px) {
       .testimonials__person {
         width: 100%;
-        margin-bottom: 70px; } }
+        margin-bottom: 80px; } }
   .testimonials__image {
     margin-bottom: 50px; }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 1024px) {
       .testimonials__image {
         margin-bottom: 30px; } }
     .testimonials__image img {
@@ -406,15 +440,21 @@ ul {
     font-family: Barlow, sans-serif;
     font-weight: 600;
     font-size: 18px; }
+    @media only screen and (max-width: 1024px) {
+      .testimonials__text {
+        margin-bottom: 20px; } }
     @media only screen and (max-width: 425px) {
       .testimonials__text {
-        margin-bottom: 30px; } }
+        font-size: 16px; } }
   .testimonials__name {
     color: #23303e;
     margin-bottom: 20px;
     font-family: Fraunces, serif;
     font-weight: 900;
     font-size: 18px; }
+    @media only screen and (max-width: 1024px) {
+      .testimonials__name {
+        margin-bottom: 5px; } }
     @media only screen and (max-width: 425px) {
       .testimonials__name {
         margin-bottom: 10px; } }
@@ -424,6 +464,10 @@ ul {
     font-family: Barlow, sans-serif;
     font-weight: 600;
     font-size: 18px; }
+    @media only screen and (max-width: 1024px) {
+      .testimonials__position {
+        font-weight: 400;
+        font-size: 16px; } }
     @media only screen and (max-width: 425px) {
       .testimonials__position {
         font-size: 14px; } }
@@ -446,6 +490,9 @@ footer {
   .footer__logo {
     margin-bottom: 15px;
     width: 10%; }
+    @media only screen and (max-width: 1024px) {
+      .footer__logo {
+        width: 20%; } }
     @media only screen and (max-width: 425px) {
       .footer__logo {
         width: 50%; } }
@@ -455,6 +502,9 @@ footer {
   .footer .navigation {
     width: 20%;
     margin-bottom: 40px; }
+    @media only screen and (max-width: 1024px) {
+      .footer .navigation {
+        width: 40%; } }
     @media only screen and (max-width: 425px) {
       .footer .navigation {
         width: 80%; } }
@@ -475,6 +525,9 @@ footer {
           filter: invert(100%) sepia(96%) saturate(17%) hue-rotate(311deg) brightness(150%) contrast(104%); }
     .footer .navigation__social {
       width: 10%; }
+      @media only screen and (max-width: 1024px) {
+        .footer .navigation__social {
+          width: 20%; } }
       @media only screen and (max-width: 425px) {
         .footer .navigation__social {
           width: 50%; } }
