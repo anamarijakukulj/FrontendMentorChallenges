@@ -16,7 +16,7 @@
         width: 30%;
         
          @include tablet {
-            width: 50%;
+            width: 60%;
         }
 
         @include mobile {
@@ -46,15 +46,11 @@
 
         &_item {
             color: $white;
-            @include font(Barlow, sans-serif, 400, 16px);
+            @include font(Barlow, sans-serif, 400, $font-size);
 
             @include mobile {
                 color: $grayish-dark-blue;
                 @include font(Barlow, sans-serif, 600, $font-size);
-            }
-
-            @include hd-desktop {
-                font-size: $font-size;
             }
         }
     }
@@ -66,14 +62,14 @@
         border-radius: 32px;
         @include font(Fraunces, serif, 700, 16px);
 
+        &:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+                color: $white;
+        }
+
         @include mobile {
             background-color: $yellow;
             padding: 18px 30px;
-        }
-
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-            color: $white;
         }
     }
 }
@@ -94,7 +90,7 @@
 }
 
 .nav__open {
-    display: inline-block;
+    display: block;
     position: absolute;
     top: 150%;
     width: 88%;

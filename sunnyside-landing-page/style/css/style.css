@@ -23,9 +23,7 @@ ul {
   .box__grid {
     display: grid;
     width: 100vw;
-    grid-template-areas: "transform transform"
- "stand stand"
- "graphic photography"; }
+    grid-template-areas: "transform transform" "stand stand" "graphic photography"; }
     .box__grid .transform {
       grid-area: transform; }
       @media only screen and (max-width: 425px) {
@@ -160,8 +158,8 @@ ul {
       padding-left: 0; } }
 
 .article__title {
-  color: #23303e;
   width: 80%;
+  color: #23303e;
   font-family: Fraunces, serif;
   font-weight: 700;
   font-size: 42px; }
@@ -180,10 +178,10 @@ ul {
       font-size: 48px; } }
 
 .article__text {
-  line-height: 28px;
+  width: 90%;
   padding-right: 5px;
   margin-bottom: 40px;
-  width: 90%;
+  line-height: 28px;
   color: #818498;
   font-family: Barlow, sans-serif;
   font-weight: 600;
@@ -284,7 +282,7 @@ ul {
     width: 30%; }
     @media only screen and (max-width: 1024px) {
       .header__nav {
-        width: 50%; } }
+        width: 60%; } }
     @media only screen and (max-width: 425px) {
       .header__nav {
         display: none; } }
@@ -309,15 +307,12 @@ ul {
       color: #ffffff;
       font-family: Barlow, sans-serif;
       font-weight: 400;
-      font-size: 16px; }
+      font-size: 18px; }
       @media only screen and (max-width: 425px) {
         .header__navigation_item {
           color: #818498;
           font-family: Barlow, sans-serif;
           font-weight: 600;
-          font-size: 18px; } }
-      @media only screen and (min-width: 1920px) {
-        .header__navigation_item {
           font-size: 18px; } }
   .header__contact {
     background-color: #ffffff;
@@ -327,13 +322,13 @@ ul {
     font-family: Fraunces, serif;
     font-weight: 700;
     font-size: 16px; }
+    .header__contact:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #ffffff; }
     @media only screen and (max-width: 425px) {
       .header__contact {
         background-color: #fad400;
         padding: 18px 30px; } }
-    .header__contact:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-      color: #ffffff; }
 
 .mobile__navigation {
   display: none; }
@@ -347,7 +342,7 @@ ul {
   opacity: 50%; }
 
 .nav__open {
-  display: inline-block;
+  display: block;
   position: absolute;
   top: 150%;
   width: 88%;
@@ -365,9 +360,9 @@ ul {
     border-top: 25px solid transparent; }
 
 .teaser {
+  height: 90vh;
   overflow: hidden;
   text-align: center;
-  height: 90vh;
   background-size: 100% 100%; }
   @media only screen and (max-width: 1024px) {
     .teaser {
@@ -421,8 +416,7 @@ ul {
         margin-bottom: 70px; } }
     @media only screen and (max-width: 425px) {
       .testimonials__title {
-        font-size: 16px;
-        margin-bottom: 70px; } }
+        font-size: 16px; } }
   .testimonials__cards {
     display: flex;
     justify-content: space-between;
@@ -502,7 +496,7 @@ footer {
   align-items: center;
   align-content: center;
   flex-direction: column; }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 1024px) {
     .footer {
       padding-bottom: 60px; } }
   .footer__logo {

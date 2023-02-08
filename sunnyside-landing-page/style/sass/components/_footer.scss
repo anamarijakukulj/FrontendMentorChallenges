@@ -8,7 +8,7 @@ footer {
     flex-wrap: wrap;
     @include flex(space-between, center, column);
 
-    @include mobile {
+    @include tablet {
         padding-bottom: 60px;
     }
 

@@ -73,9 +73,9 @@
     }
 
     &__image {
-        @extend .box;
         background-position: center;
         background-size: cover;
+        @extend .box;
 
         @include mobile {
             height: 40vh;
@@ -198,8 +198,8 @@
     }
 
     &__title {
-        color: $des-blue;
         width: 80%;
+        color: $des-blue;
         @include font(Fraunces, serif, 700, 42px);
 
         @include tablet {
@@ -220,10 +220,10 @@
     }
 
     &__text {
-        line-height: 28px;
+        width: 90%;
         padding-right: 5px;
         margin-bottom: 40px;
-        width: 90%;
+        line-height: 28px;
         color: $grayish-dark-blue;
         @include font(Barlow, sans-serif, 600, $font-size);
 
