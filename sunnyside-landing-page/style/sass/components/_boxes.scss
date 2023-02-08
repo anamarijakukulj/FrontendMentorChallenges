@@ -1,17 +1,40 @@
 .box {
-    width: 100%;
-    height: 70vh;
+    width: 50%;
+    height: inherit;
 
-    @include mobile {
-        height: auto;
+    &__grid {
+        display: grid;
+        width: 100vw;
+        grid-template-areas: 
+            "transform transform"
+                "stand stand"
+            "graphic photography";
+
+        .transform {
+            grid-area: transform;
+        }
+
+        .stand {
+            grid-area: stand;
+        }
+
+        .graphic {
+            grid-area: graphic;
+        }
+
+        .photography {
+            grid-area: photography;
+        }
+    } 
+
+    &__component {
+        height: 70vh;
+        @include flex();
     }
 
     &__text {
+        padding-top: 13%;
         @extend .box;
-
-        @include mobile {
-            text-align: center;
-        }
     }
 
     &__mix {
@@ -33,8 +56,8 @@
         article {
             position: absolute;
             top: 70%;
-            left: 25%;
-            width: 50%;
+            left: 23%;
+            width: 55%;
             text-align: center;
 
             @include mobile {
@@ -48,7 +71,7 @@
             }
         }
 
-        h3 {
+        h2 {
             margin: 0;
             color: $des-cyan;
             @include font(Fraunces, serif, 900, 28px);
@@ -61,13 +84,11 @@
         p {
             color: $des-cyan;
             line-height: 26px;
-            @include font(Barlow, sans-serif, 600, 16px);
+            @include font(Barlow, sans-serif, 600, $font-size);
         }
     }
 
     div {
-        height: 70vh;
-        width: 100%;
         background-size: cover;
         background-position: center;
 
@@ -78,71 +99,23 @@
 }
 
 .article {
-    &__grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0;
-
-        @include mobile {
-            grid-template-columns: repeat(1, 1fr);
-
-            &_first {
-                order: 1;
-            }
-
-            &_second {
-                order: 2;
-            }
-
-            &_third {
-                order: 3;
-            }
-
-            &_fourth {
-                order: 4;
-            }
-
-            &_fifth {
-                order: 5;
-            }
-
-            &_sixth {
-                order: 6;
-            }
-        }
-    }
-
-    &__left,
     &__right {
-        width: 65%;
-        padding-top: 12%;
+        padding-left: 15%;
+        width: 70%;
 
-        @include mobile {
-            width: 100%;
-            padding: 10% 0 20%;
+        .article__title {
+            width: 90%;
         }
     }
 
     &__left {
-        padding-left: 22%;
-
-        @include mobile {
-            padding-left: 0;
-        }
-    }
-
-    &__right {
-        padding-left: 15%;
-
-        @include mobile {
-            padding-left: 0;
-        }
+        padding-left: 20%;
+        width: 70%;
     }
 
     &__title {
-        width: 90%;
         color: $des-blue;
+        width: 80%;
         @include font(Fraunces, serif, 700, 42px);
 
         @include mobile {
@@ -154,10 +127,10 @@
     }
 
     &__text {
-        width: 96%;
         line-height: 28px;
         padding-right: 5px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        width: 90%;
         color: $grayish-dark-blue;
         @include font(Barlow, sans-serif, 600, $font-size);
 
