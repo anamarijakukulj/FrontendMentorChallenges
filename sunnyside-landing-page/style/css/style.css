@@ -57,22 +57,19 @@ ul {
         flex-direction: column;
         height: auto; } }
   .box__text {
-    padding-top: 13%; }
+    padding-top: 10%; }
     @media only screen and (max-width: 1024px) {
       .box__text {
         padding-top: 6%; } }
     @media only screen and (max-width: 425px) {
       .box__text {
         padding-top: 20%; } }
-  @media only screen and (max-width: 1024px) {
-    .box__image {
-      background-position: center;
-      background-size: cover; } }
-  @media only screen and (max-width: 425px) {
-    .box__image {
-      height: 40vh;
-      background-position: center;
-      background-size: cover; } }
+  .box__image {
+    background-position: center;
+    background-size: cover; }
+    @media only screen and (max-width: 425px) {
+      .box__image {
+        height: 40vh; } }
   .box__mix {
     position: relative;
     width: 100%;

@@ -56,7 +56,7 @@
     }
 
     &__text {
-        padding-top: 13%;
+        padding-top: 10%;
         @extend .box;
 
         @include tablet {
@@ -70,16 +70,11 @@
 
     &__image {
         @extend .box;
-
-        @include tablet {
-            background-position: center;
-            background-size: cover;
-        }
+        background-position: center;
+        background-size: cover;
 
         @include mobile {
             height: 40vh;
-            background-position: center;
-            background-size: cover;
         }
     }
 
