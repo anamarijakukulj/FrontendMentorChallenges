@@ -2,21 +2,21 @@ const button = document.querySelector("#mobile-menu");
 const navigation = document.querySelector("#mobile-navigation");
 
 const openNavigation = () => {
-    navigation.style.display = "block";
-    button.style.opacity = "0.5";
-}
+  navigation.classList.add("nav__open");
+  button.classList.add("opacity");
+};
 
 const closeNavigation = () => {
-    navigation.style.display = "none";
-    button.style.opacity = "1";
-}
+  navigation.classList.remove("nav__open");
+  button.classList.remove("opacity");
+};
 
 const clickButton = () => {
-    if(navigation.style.display = "block") {
-        closeNavigation();
-    } else if(navigation.style.display = "none") {
-        openNavigation();
-    }
-}
+  if (navigation.classList.contains("nav__open")) {
+    closeNavigation();
+  } else {
+    openNavigation();
+  }
+};
 
 button.addEventListener("click", clickButton);
